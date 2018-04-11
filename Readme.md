@@ -1,7 +1,7 @@
 # Личный проект «Мишка» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Анастасия Ничипорчук](https://up.htmlacademy.ru/adaptive/14/user/612797).
-* Наставник: `Неизвестно`.
+* Наставник: [Анна Пономарёва](https://up.htmlacademy.ru/adaptive/14/user/153610).
 
 ---
 
