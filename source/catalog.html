@@ -6,53 +6,61 @@
  <link href="" rel="stylesheet">
 </head>
 <body>
-  <header>
-    <h1>MISHKA</h1>
-    <img src="#" width="" height="" alt="Логотип">
-    <nav>
-        <a href=#>Меню</a>
+  <header class="page-header">
+    <h1 class="page-header__title">MISHKA</h1>
+    <img class="page-header__logo" src="#" width="" height="" alt="Логотип">
+    <nav class="page-navigation">
+        <a class="page-navigation__open" href=#>Меню</a>
+        <ul class="page-menu">
+          <li class="page-menu__item">Каталог товаров</li>
+          <li class="page-menu__item">Вязание на заказ</li>
+          <li class="page-menu__item">Поиск по сайту</li>
+          <li class="page-menu__item"Корзина: пока пуста</li>
+        </ul>
     </nav>
   </header>
-  <main>
-    <h1>Каталог товаров</h1>
-    <section>
-      <h2>Товар каталога</h2>
-      <img src="#" width="" height="" alt="Фото товара">
-      <b>Зайчик-попрыгайчик</b>
-      <p>Рост 30 см, вес 200 г</p>
-      <b>1200 руб.</b>
+  <main class="catalog-main">
+    <h1 class="catalog__title">Каталог товаров</h1>
+    <section class="catalog-item">
+      <h2 class="visually-hidden">Товар каталога</h2>
+      <img class="catalog-item__photo" src="#" width="" height="" alt="Фото товара">
+      <b class="catalog-item__title">Зайчик-попрыгайчик</b>
+      <p class="catalog-item__description">Рост 30 см, вес 200 г</p>
+      <b class="catalog-item__price">1200 руб.</b>
     </section>
-    <section>
-      <h2>Товар каталога</h2>
-      <img src="#" width="" height="" alt="Фото товара">
-      <b>Корзинка для белья</b>
-      <p>Диаметр 15 см, высота 10 см</p>
-      <b>690 руб.</b>
+    <section class="catalog-item">
+      <h2 class="visually-hidden">Товар каталога</h2>
+      <img class="catalog-item__photo" src="#" width="" height="" alt="Фото товара">
+      <b class="catalog-item__title">Корзинка для белья</b>
+      <p class="catalog-item__description">Диаметр 15 см, высота 10 см</p>
+      <b class="catalog-item__price">690 руб.</b>
     </section>
-    <section>
-      <h2>Товар каталога</h2>
-      <img src="#" width="" height="" alt="Фото товара">
-      <b>Большая корзинка для игрушек</b>
-      <p>Диаметр 30 см, высота 30 см/p>
-      <b>1500 руб.</b>
+    <section class="catalog-item">
+      <h2 class="visually-hidden">Товар каталога</h2>
+      <img class="catalog-item__photo" src="#" width="" height="" alt="Фото товара">
+      <b class="catalog-item__title">Большая корзинка для игрушек</b>
+      <p class="catalog-item__description">Диаметр 30 см, высота 30 см/p>
+      <b class="catalog-item__price">1500 руб.</b>
     </section>
-    <article>
-      <h1>Процесс производства</h1>
-      <a href=#>Воспроизвести видео</a>
-      <p>По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
-      <a href=#>Сделать заказ</a>
+    <article class="process">
+      <h1 class="process__title">Процесс производства</h1>
+      <a class="process__play" href=#>Воспроизвести видео</a>
+      <p class="process__description">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
+      <a class="process__button" href=#>Сделать заказ</a>
     </article>
-    <footer>
-      <div>
-        <ul>
-          <li>Instagram</li>
-          <li>Facebook</li>
-          <li>Twitter</li>
+    <footer class="page-footer">
+      <div class="social">
+        <ul class="social-list">
+          <li class="social-list__item">Instagram</li>
+          <li class="social-list__item">Facebook</li>
+          <li class="social-list__item">Twitter</li>
         </ul>
       </div>
-      <div>
-        <p>Разработано</p>
-        <img src="" width="" height="" alt="Лого академии">
+      <div class="developer">
+        <p class="developer__text">Разработано</p>
+        <a class="maker" href=#>
+            <img class="maker__logo" src="" width="" height="" alt="Лого академии">
+        </a>
       </div>
     </footer>
   </main>
