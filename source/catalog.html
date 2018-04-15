@@ -58,18 +58,23 @@
         </div>
         <div class="developer">
           <p class="developer__text">Разработано</p>
-          <a class="maker" href=#>
-            <img class="maker__logo" src="" width="" height="" alt="Лого академии">
+          <a class="developer__link" href=#>
+            <img class="developer__logo" src="" width="" height="" alt="Лого академии">
           </a>
         </div>
       </footer>
       <section class="modal-add">
         <h2 class="modal-add__title">Добавить в корзину</h2>
         <p class="modal-add__description">Выберите размер:</p>
-        <a class="modal-add__option" href=#>S</a>
-        <a class="modal-add__option" href=#>M</a>
-        <a class="modal-add__option" href=#>L</a>
-        <a class="modal-add__button" href=#>Добавить</a>
+        <form class="modal-add__form" method="post" action="https://echo.htmlacademy.ru">
+          <input class="modal-add__input" type="radio" name="size" id="size-s">
+          <label class="modal-add__label" for="size-s">S</label>
+          <input class="modal-add__input" type="radio" name="size" id="size-m">
+          <label class="modal-add__label" for="size-m">M</label>
+          <input class="modal-add__input" type="radio" name="size" id="size-l">
+          <label class="modal-add__label" for="size-l">L</label>
+          <input class="modal-add__button" type="submit" id="modal-submit" value="Добавить">
+        </form>
       </section>
     </main>
   </body>

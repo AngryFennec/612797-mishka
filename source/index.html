@@ -23,14 +23,14 @@
       <article class="head">
         <h1 class="head__title">Милые штуки ручной работы для дома</h1>
         <ul class="head__list">
-          <li class="head__list--item">Предметы интерьера</li>
-          <li class="head__list--item">Детские игрушки</li>
+          <li class="head__list-item">Предметы интерьера</li>
+          <li class="head__list-item">Детские игрушки</li>
         </ul>
       </article>
       <article class="promo">
         <h2 class="promo__title">Вязаные корзинки</h2>
         <p class="promo__week">Товар недели</p>
-        <p class="promo_description">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.</p>
+        <p class="promo__description">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.</p>
         <table class="params">
           <tr class="params__row">
             <td class="params__title">Цвет:</td>
@@ -52,12 +52,12 @@
       <section class="features">
         <h2 class="features__title">Коротко о нас</h2>
         <ul class="features__list">
-          <li class="features__list--item">Экологически чистые материалы</li>
-          <li class="features__list--item">Скандинавский стиль по российской цене</li>
-          <li class="features__list--item">Увеличивает лайки на фотографиях</li>
-          <li class="features__list--item">Связано вручную с любовью и умилением</li>
-          <li class="features__list--item">Поддержка отечественного производителя</li>
-          <li class="features__list--item">Поставляется в подарочной упаковке</li>
+          <li class="features__list-item">Экологически чистые материалы</li>
+          <li class="features__list-item">Скандинавский стиль по российской цене</li>
+          <li class="features__list-item">Увеличивает лайки на фотографиях</li>
+          <li class="features__list-item">Связано вручную с любовью и умилением</li>
+          <li class="features__list-item">Поддержка отечественного производителя</li>
+          <li class="features__list-item">Поставляется в подарочной упаковке</li>
         </ul>
       </section>
       <section class="messages">
@@ -93,18 +93,23 @@
         </div>
         <div class="developer">
           <p class="developer__text">Разработано</p>
-          <a class="maker" href=#>
-            <img class="maker__logo" src="" width="" height="" alt="Лого академии">
+          <a class="developer__link" href=#>
+            <img class="developer__logo" src="" width="" height="" alt="Лого академии">
           </a>
         </div>
       </footer>
       <section class="modal-add">
         <h2 class="modal-add__title">Добавить в корзину</h2>
         <p class="modal-add__description">Выберите размер:</p>
-        <a class="modal-add__option" href=#>S</a>
-        <a class="modal-add__option" href=#>M</a>
-        <a class="modal-add__option" href=#>L</a>
-        <a class="modal-add__button" href=#>Добавить</a>
+        <form class="modal-add__form" method="post" action="https://echo.htmlacademy.ru">
+          <input class="modal-add__input" type="radio" name="size" id="size-s">
+          <label class="modal-add__label" for="size-s">S</label>
+          <input class="modal-add__input" type="radio" name="size" id="size-m">
+          <label class="modal-add__label" for="size-m">M</label>
+          <input class="modal-add__input" type="radio" name="size" id="size-l">
+          <label class="modal-add__label" for="size-l">L</label>
+          <input class="modal-add__button" type="submit" id="modal-submit" value="Добавить">
+        </form>
       </section>
     </main>
   </body>
