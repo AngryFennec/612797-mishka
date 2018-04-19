@@ -1,0 +1,36 @@
+.fontface(@family, @filename: @family, @weight: normal, @style: normal) {
+  @font-face {
+    font-family: @family;
+    src: url("../fonts/@{filename}.woff2") format("woff2"),
+      url("../fonts/@{filename}.woff") format("woff");
+    font-weight: @weight;
+    font-style: @style;
+  }
+}
+
+.font-param(@size, @height, @weight, @color) {
+  font-size: @size;
+  line-height: @height;
+  font-weight: @weight;
+  color: @color;
+}
+/*
+27/30
+17/16
+13/24
+17/18
+14/16
+19/18
+17/24
+13/30
+15/24
+19/24
+25/30
+17/20
+15/30
+17/30
+18/30*/
+
+a {
+  text-decoration: none;
+}

@@ -3,25 +3,28 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Мишка</title>
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
     <link href="./css/style.css" rel="stylesheet">
   </head>
-  <body>
+  <body class="body-catalog">
     <header class="page-header">
       <h1 class="page-header__title">MISHKA</h1>
-      <img class="page-header__logo" src="#" width="" height="" alt="Логотип">
+      <a href="index.html">
+        <img class="page-header__logo" src="../img/logo-mobile.svg" width="86" height="35" alt="Логотип">
+      </a>
       <nav class="page-navigation">
         <a class="page-navigation__open" href=#>Меню</a>
         <ul class="page-menu">
           <li class="page-menu__item">Каталог товаров</li>
           <li class="page-menu__item">Вязание на заказ</li>
           <li class="page-menu__item">Поиск по сайту</li>
-          <li class="page-menu__item"Корзина: пока пуста</li>
+          <li class="page-menu__item">Корзина: пока пуста</li>
         </ul>
       </nav>
     </header>
     <main class="catalog-main">
-      <h1 class="catalog__title">Каталог товаров</h1>
+      <div class="header-block">
+        <h1 class="catalog__title">Каталог товаров</h1>
+      </div>
       <section class="catalog-item">
         <h2 class="visually-hidden">Товар каталога</h2>
         <img class="catalog-item__photo" src="#" width="" height="" alt="Фото товара">
@@ -47,7 +50,7 @@
         <h1 class="process__title">Процесс производства</h1>
         <a class="process__play" href=#>Воспроизвести видео</a>
         <p class="process__description">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
-        <a class="process__button" href=#>Сделать заказ</a>
+        <a class="process__button  button" href=#>Сделать заказ</a>
       </article>
       <footer class="page-footer">
         <div class="social">
@@ -74,7 +77,7 @@
           <label class="modal-add__label" for="size-m">M</label>
           <input class="modal-add__input" type="radio" name="size" id="size-l">
           <label class="modal-add__label" for="size-l">L</label>
-          <input class="modal-add__button" type="submit" id="modal-submit" value="Добавить">
+          <input class="modal-add__button  button" type="submit" id="modal-submit" value="Добавить">
         </form>
       </section>
     </main>
