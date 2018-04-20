@@ -4,23 +4,28 @@
     <meta charset="utf-8">
     <title>HTML Academy: Мишка</title>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link href="./css/style.css" rel="stylesheet">
   </head>
-  <body>
+  <body class="body-form">
     <header class="page-header">
-      <h1 class="page-header__title">MISHKA</h1>
-      <img class="page-header__logo" src="#" width="" height="" alt="Логотип">
+      <h1 class="page-header__title visually-hidden">MISHKA</h1>
+      <a href="index.html">
+        <img class="page-header__logo" src="./img/logo-mobile.svg" width="86" height="35" alt="Логотип">
+      </a>
       <nav class="page-navigation">
         <a class="page-navigation__open" href=#>Меню</a>
         <ul class="page-menu">
           <li class="page-menu__item">Каталог товаров</li>
           <li class="page-menu__item">Вязание на заказ</li>
           <li class="page-menu__item">Поиск по сайту</li>
-          <li class="page-menu__item"Корзина: пока пуста</li>
+          <li class="page-menu__item">Корзина: пока пуста</li>
         </ul>
       </nav>
     </header>
     <main class="form-main">
-      <h1 class="form-main__header">Вязание на заказ</h1>
+      <div class="header-block">
+        <h1 class="form-main__header">Вязание на заказ</h1>
+      </div>
       <p class="form-main__description">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
       <form class="form" method="post" action="https://echo.htmlacademy.ru">
         <fiedset class="form__fieldeset type-block">
@@ -75,7 +80,7 @@
           <textarea class="form__input addon-block__input" value="Опишите все ваши пожелания к заказу" rows="3" id="any-comment"></textarea>
         </fiedset>
         <p class="form__required">*Поля обязательны для заполнения</p>
-        <input class="form__send" type="submit" id="form-submit" value="Отправить заказ">
+        <input class="form__send  button" type="submit" id="form-submit" value="Отправить заказ">
       </form>
       <footer class="page-footer">
         <div class="social">
@@ -88,10 +93,12 @@
         <div class="developer">
           <p class="developer__text">Разработано</p>
           <a class="developer__link" href=#>
-            <img class="developer__logo" src="" width="" height="" alt="Лого академии">
+            <img class="developer__logo" src="./img/logo-htmlacademy.svg" width="27" height="34" alt="Лого академии">
           </a>
         </div>
       </footer>
     </main>
+    <script src="js/gen.js">
+    </script>
   </body>
 </html>
