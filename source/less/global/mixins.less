@@ -1,17 +1,7 @@
-.fontface(@family, @filename: @family, @weight: normal, @style: normal) {
-  @font-face {
-    font-family: @family;
-    src: url("../fonts/@{filename}.woff2") format("woff2"),
-      url("../fonts/@{filename}.woff") format("woff");
-    font-weight: @weight;
-    font-style: @style;
-  }
-}
-
-.font-param(@size, @height, @weight, @color) {
+.font-param (@size, @height, @family, @color) {
   font-size: @size;
   line-height: @height;
-  font-weight: @weight;
+  font-family: @family;
   color: @color;
 }
 
