@@ -2,8 +2,19 @@
   .font-param(27px, 30px, "Open Sans Bold", @dark-font);
   background-color: @gray-back;
   min-height: 176px;
-  outline: 2px solid red;
   margin: 0;
   padding-left: 30px;
   padding-right: 30px;
+}
+
+@media (min-width: @tablet-width) {
+  .header-block {
+    min-height: 224px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .header-block {
+    min-height: 250px;
+  }
 }

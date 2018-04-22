@@ -23,45 +23,83 @@
       </nav>
     </header>
     <main class="catalog-main">
-      <div class="header-block">
+      <div class="header-block catalog-main__header">
         <h1 class="catalog__title">Каталог товаров</h1>
       </div>
-      <section class="catalog-item">
-        <h2 class="visually-hidden">Товар каталога</h2>
-        <img class="catalog-item__photo" src="./img/photo-hare-mobile@1x.jpg" width="260" height="195" alt="Фото товара">
-        <b class="catalog-item__title">Зайчик-попрыгайчик</b>
-        <p class="catalog-item__description">Рост 30 см, вес 200 г</p>
-        <b class="catalog-item__price">1200 руб.</b>
-      </section>
-      <section class="catalog-item">
-        <h2 class="visually-hidden">Товар каталога</h2>
-        <img class="catalog-item__photo" src="./img/photo-bowl-mobile@1x.jpg" width="260" height="195" alt="Фото товара">
-        <b class="catalog-item__title">Корзинка для белья</b>
-        <p class="catalog-item__description">Диаметр 15 см, высота 10 см</p>
-        <b class="catalog-item__price">690 руб.</b>
-      </section>
-      <section class="catalog-item">
-        <h2 class="visually-hidden">Товар каталога</h2>
-        <img class="catalog-item__photo" src="./img/photo-toys-mobile@1x.jpg" width="260" height="195" alt="Фото товара">
-        <b class="catalog-item__title">Большая корзинка для игрушек</b>
-        <p class="catalog-item__description">Диаметр 30 см, высота 30 см</p>
-        <b class="catalog-item__price">1500 руб.</b>
-      </section>
+      <article class="catalog-main__goods">
+        <section class="catalog-item">
+          <h2 class="visually-hidden">Товар каталога</h2>
+          <img class="catalog-item__photo" src="./img/photo-hare-mobile@1x.jpg" width="260" height="195" alt="Фото товара">
+          <div class=catalog-item__order>
+            <div class="catalog-item__info">
+              <b class="catalog-item__title">Зайчик-попрыгайчик</b>
+              <p class="catalog-item__description">Рост 30 см, вес 200 г</p>
+            </div>
+            <div class="catalog-item__price-block">
+              <b class="catalog-item__price">1200 руб.</b>
+            </div>
+          </div>
+        </section>
+        <section class="catalog-item">
+          <h2 class="visually-hidden">Товар каталога</h2>
+          <img class="catalog-item__photo" src="./img/photo-bowl-mobile@1x.jpg" width="260" height="195" alt="Фото товара">
+          <div class=catalog-item__order>
+            <div class="catalog-item__info">
+              <b class="catalog-item__title">Корзинка для белья</b>
+              <p class="catalog-item__description">Диаметр 15 см, высота 10 см</p>
+            </div>
+            <div class="catalog-item__price-block">
+              <b class="catalog-item__price">690 руб.</b>
+            </div>
+          </div>
+        </section>
+        <section class="catalog-item">
+          <h2 class="visually-hidden">Товар каталога</h2>
+          <img class="catalog-item__photo" src="./img/photo-toys-mobile@1x.jpg" width="260" height="195" alt="Фото товара">
+          <div class=catalog-item__order>
+            <div class="catalog-item__info">
+              <b class="catalog-item__title">Большая корзинка для игрушек</b>
+              <p class="catalog-item__description">Диаметр 30 см, высота 30 см</p>
+            </div>
+            <div class="catalog-item__price-block">
+              <b class="catalog-item__price">1500 руб.</b>
+            </div>
+          </div>
+        </section>
+      </article>
       <article class="process">
-        <h1 class="process__title">Процесс производства</h1>
-        <a class="process__play" href=#>Воспроизвести видео</a>
-        <p class="process__description">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
-        <a class="process__button  button" href=#>Сделать заказ</a>
+        <div class="process__header">
+          <h1 class="process__title">Процесс производства</h1>
+        </div>
+        <div class="process__video">
+          <a class="process__play" href=#>Воспроизвести видео</a>
+        </div>
+        <div class="process__order">
+          <p class="process__description">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
+          <a class="process__button  button" href=#>Сделать заказ</a>
+        </div>
       </article>
       <footer class="page-footer">
-        <div class "footer-logo">
+        <div class="footer-logo">
           <img src="./img/logo-mobile.svg" width="86" height="35" alt="Логотип">
         </div>
         <div class="social">
           <ul class="social-list">
-            <li class="social-list__item">Instagram</li>
-            <li class="social-list__item">Facebook</li>
-            <li class="social-list__item">Twitter</li>
+            <li class="social-list__item">
+              <a class="social-list__link" href="#">
+                <span class="visually-hidden">Instagram</span>
+              </a>
+            </li>
+            <li class="social-list__item">
+              <a class="social-list__link" href="#">
+                <span class="visually-hidden">Facebook</span>
+              </a>
+            </li>
+            <li class="social-list__item">
+              <a class="social-list__link" href="#">
+                <span class="visually-hidden">Twitter</span>
+              </a>
+            </li>
           </ul>
         </div>
         <div class="developer">

@@ -5,3 +5,26 @@
   flex-direction: column;
   justify-content: flex-start;
 }
+
+
+.catalog-main__header {
+  margin-bottom: 82px;
+}
+
+.catalog-main__goods {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: @tablet-width) {
+  .catalog-main__goods {
+    flex-direction: column;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .catalog-main__goods {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
