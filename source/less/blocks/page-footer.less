@@ -1,4 +1,26 @@
-/*.page-footer {
-
+.page-footer {
+  background-color: @gray-back;
+  display: flex;
+  flex-direction: column;
+  min-height: 160px;
+  justify-content: flex-start;
 }
-*/
+
+
+@media (min-width: @tablet-width) {
+  .page-footer {
+    min-height: 142px;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-footer {
+    min-height: 142px;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+  }
+}

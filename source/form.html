@@ -3,8 +3,8 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Мишка</title>
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
     <link href="./css/style.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
   <body class="body-form">
     <header class="page-header">
@@ -26,7 +26,9 @@
       <div class="header-block">
         <h1 class="form-main__header">Вязание на заказ</h1>
       </div>
-      <p class="form-main__description">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
+      <div class="descr-block">
+        <p class="descr-block__description">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
+      </div>
       <form class="form" method="post" action="https://echo.htmlacademy.ru">
         <fiedset class="form__fieldeset type-block">
           <legend class="form__fieldset-legend type-block__legend">Тип</legend>
@@ -62,16 +64,13 @@
             <input class="form__input personal-block__input" type="text" placeholder="Отчество, если желаете" id="order-second-name">
           </label>
         </fiedset>
-        <fiedset class="form__fieldeset phone-block">
-          <legend class="form__fieldset-legend phone-block__legend">Тел</legend>
-          <label class="form__label phone-block__label" for="order-phone">Номер телефона:
-            <input class="form__input phone-block__input" type="text" placeholder="+7 ХХХ ХХ ХХ*" id="order-phone" required>
+        <fiedset class="form__fieldeset info-block">
+          <legend class="form__fieldset-legend info-block__legend">Тел</legend>
+          <label class="form__label info-block__label" for="order-phone">Номер телефона:
+            <input class="form__input info-block__input" type="text" placeholder="+7 ХХХ ХХ ХХ*" id="order-phone" required>
           </label>
-        </fiedset>
-        <fiedset class="form__fieldeset mail-block">
-          <legend class="form__fieldset-legend  mail-block__legend">E-mail</legend>
-          <label class="form__label  mail-block__label" for="order-mail">Адрес почты:
-            <input class="form__input  mail-block__input" type="text" placeholder="Ваш Email*" id="order-mail" required>
+          <label class="form__label  info-block__label" for="order-mail">Адрес почты:
+            <input class="form__input  info-block__input" type="text" placeholder="Ваш Email*" id="order-mail" required>
           </label>
         </fiedset>
         <fiedset class="form__fieldeset addon-block">
@@ -83,6 +82,9 @@
         <input class="form__send  button" type="submit" id="form-submit" value="Отправить заказ">
       </form>
       <footer class="page-footer">
+        <div class "footer-logo">
+          <img src="./img/logo-mobile.svg" width="86" height="35" alt="Логотип">
+        </div>
         <div class="social">
           <ul class="social-list">
             <li class="social-list__item">Instagram</li>
