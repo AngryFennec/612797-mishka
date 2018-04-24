@@ -31,67 +31,58 @@
       </div>
       <form class="form" method="post" action="https://echo.htmlacademy.ru">
         <div class="type-container">
-          <fiedset class="form__fieldeset type-block">
-            <legend class="form__fieldset-legend type-block__legend">Тип</legend>
-            <input class="form__input type-block__input" type="radio" name="type" id="type-1" checked>
-            <label class="form__label type-block__label" for="type-1">Аксессуар для интерьера</label>
-            <input class="form__input type-block__input" type="radio" name="type" id="type-2" >
-            <label class="form__label type-block__label" for="type-2">Детская игрушка</label>
-          </fiedset>
+          <p class="form__fieldset-legend type-container__legend">Тип</p>
+          <div class="type-container__options">
+            <input class="form__input type-container__input" type="radio" name="type" id="type-1" checked>
+            <label class="form__label type-container__label" for="type-1">Аксессуар для интерьера</label>
+            <input class="form__input type-container__input" type="radio" name="type" id="type-2" >
+            <label class="form__label type-container__label" for="type-2">Детская игрушка</label>
+          </div>
         </div>
         <div class="color-container">
-          <fiedset class="form__fieldeset color-block">
-            <legend class="form__fieldset-legend color-block__legend">Цвет</legend>
-            <input class="form__input color-block__input" type="checkbox" name="color" id="white" checked>
-            <label class="form__label color-block__label" for="white">Белый</label>
-            <input class="form__input color-block__input" type="checkbox" name="color" id="gray" checked>
-            <label class="form__label color-block__label" for="gray">Серый</label>
-            <input class="form__input color-block__input" type="checkbox" name="color" id="tyffani">
-            <label class="form__label color-block__label" for="tyffani">"Тиффани"</label>
-            <input class="form__input color-block__input" type="checkbox" name="color" id="black">
-            <label class="form__label color-block__label" for="black">Черный</label>
-            <input class="form__input color-block__input" type="checkbox" name="color" id="pink">
-            <label class="form__label color-block__label" for="pink">Розовый</label>
-            <input class="form__input color-block__input" type="checkbox" name="color" id="orange">
-            <label class="form__label color-block__label" for="orange">Оранжевый</label>
-          </fiedset>
+          <legend class="form__fieldset-legend color-container__legend">Цвет</legend>
+          <div class="color-container__options">
+            <input class="form__input color-container__input" type="checkbox" name="color" id="white" checked>
+            <label class="form__label color-container__label" for="white">Белый</label>
+            <input class="form__input color-container__input" type="checkbox" name="color" id="gray" checked>
+            <label class="form__label color-container__label" for="gray">Серый</label>
+            <input class="form__input color-container__input" type="checkbox" name="color" id="tyffani">
+            <label class="form__label color-container__label" for="tyffani">"Тиффани"</label>
+            <input class="form__input color-container__input" type="checkbox" name="color" id="black">
+            <label class="form__label color-container__label" for="black">Черный</label>
+            <input class="form__input color-container__input" type="checkbox" name="color" id="pink">
+            <label class="form__label color-container__label" for="pink">Розовый</label>
+            <input class="form__input color-container__input" type="checkbox" name="color" id="orange">
+            <label class="form__label color-container__label" for="orange">Оранжевый</label>
+          </div>
         </div>
         <div class="personal-container">
-          <fiedset class="form__fieldeset personal-block">
-            <legend class="form__fieldset-legend personal-block__legend">ФИО</legend>
-            <label class="form__label personal-block__label" for="order-name">Имя:
-              <input class="form__input personal-block__input" type="text" placeholder="Введите ваше имя*" id="order-name" required>
-            </label>
-            <label class="form__label personal-block__label" for="order-surname">Фамилия:
-              <input class="form__input personal-block__input" type="text" placeholder="Укажите фамилию*" id="order-surname" required>
-            </label>
-            <label class="form__label personal-block__label" for="order-second-name">Отчество:
-              <input class="form__input personal-block__input" type="text" placeholder="Отчество, если желаете" id="order-second-name">
-            </label>
-          </fiedset>
+          <p class="form__fieldset-legend personal-container__legend">ФИО</p>
+          <div class="personal-container__options">
+            <label class="form__label personal-container__label" for="order-name">Имя:</label>
+            <input class="form__input personal-container__input" type="text" placeholder="Введите ваше имя*" id="order-name" required>
+            <label class="form__label personal-container__label" for="order-surname">Фамилия:</label>
+            <input class="form__input personal-container__input" type="text" placeholder="Укажите фамилию*" id="order-surname" required>
+            <label class="form__label personal-container__label" for="order-second-name">Отчество:</label>
+            <input class="form__input personal-container__input" type="text" placeholder="Отчество, если желаете" id="order-second-name">
+          </div>
         </div>
         <div class="info-container">
-          <fiedset class="form__fieldeset info-block">
-            <legend class="form__fieldset-legend info-block__legend-phone">Тел</legend>
-            <label class="form__label info-block__label" for="order-phone">Номер телефона:
-              <input class="form__input info-block__input" type="text" placeholder="+7 ХХХ ХХ ХХ*" id="order-phone" required>
-            </label>
-            <legend class="form__fieldset-legend info-block__legend-mail">E-mail</legend>
-            <label class="form__label  info-block__label" for="order-mail">Адрес почты:
-              <input class="form__input  info-block__input" type="text" placeholder="Ваш Email*" id="order-mail" required>
-            </label>
-          </fiedset>
+            <p class="form__fieldset-legend info-container__legend-phone">Тел</p>
+            <label class="form__label info-container__label visually-hidden" for="order-phone">Номер телефона:</label>
+            <input class="form__input info-container__input" type="text" placeholder="+7 ХХХ ХХ ХХ*" id="order-phone" required>
+            <p class="form__fieldset-legend info-container__legend-mail">E-mail</p>
+            <label class="form__label  info-container__label visually-hidden" for="order-mail">Адрес почты:</label>
+            <input class="form__input  info-container__input" type="text" placeholder="Ваш Email*" id="order-mail" required>
         </div>
         <div class="addon-container">
-          <fiedset class="form__fieldeset addon-block">
-            <legend class="form__fieldset-legend addon-block__legend">Доп</legend>
-            <label class="form__label addon-block__label visually-hidden" for="any-comment">Опишите все ваши пожелания к заказу</label>
-            <textarea class="form__input addon-block__input" placeholder="Опишите все ваши пожелания к заказу" rows="3" id="any-comment"></textarea>
-          </fiedset>
+          <p class="form__fieldset-legend addon-block__legend">Доп</p>
+          <label class="form__label addon-block__label visually-hidden" for="any-comment">Опишите все ваши пожелания к заказу</label>
+          <textarea class="form__input addon-block__input" placeholder="Опишите все ваши пожелания к заказу" rows="3" id="any-comment"></textarea>
         </div>
         <div class="send-block">
-          <p class="form__required">*Поля обязательны для заполнения</p>
-          <input class="form__send  button" type="submit" id="form-submit" value="Отправить заказ">
+          <p class="send-block__required">*Поля обязательны для заполнения</p>
+          <input class="send-block__btn  button" type="submit" id="form-submit" value="Отправить заказ">
         </div>
       </form>
       <footer class="page-footer">

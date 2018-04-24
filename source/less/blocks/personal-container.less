@@ -1,15 +1,50 @@
 .personal-container {
   height: 430px;
+  display: flex;
+  flex-direction: column;
+}
+
+.personal-container__options {
+  display: flex;
+  flex-direction: column;
+}
+
+.personal-container__label {
+  width: 100px;
 }
 
 @media (min-width: @tablet-width) {
   .personal-container {
     height: 305px;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .personal-container__options {
+    width: 600px;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .personal-container__input {
+    width: 500px;
   }
 }
 
 @media (min-width: @desktop-width) {
   .personal-container {
     height: 305px;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .personal-container__options {
+    width: 900px;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .personal-container__input {
+    width: 800px;
   }
 }
