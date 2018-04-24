@@ -1,4 +1,12 @@
 .map {
   background-color: @gray-back;
   min-height: 458px;
+  width: 100%;
+}
+
+@media (min-width: @desktop-width) {
+  .map {
+    order: 5;
+    width: 50%;
+  }
 }
