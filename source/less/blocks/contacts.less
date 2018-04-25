@@ -16,14 +16,27 @@
 */
 .contacts__email-adress {
   color: @lighter-font;
-  border-bottom: 1px solid @aqua-darkest;
-}
-/*
-.contacts__adress-label {
+  border-bottom: 1px solid @mail-font;
 
+  &:hover {
+    color: @mail-font;
+    border-bottom: 1px soild @mail-font;
+  }
+
+  &:active {
+    color: @mail-font-30;
+    border-bottom: 1px solid @mail-under-light;
+  }
 }
 
-.contacts__adress {
-
+@media (min-width: @tablet-width) {
+  .contacts__title {
+    .font-param(43px, 50px, "Open Sans Bold", @dark-font);
+  }
 }
-*/
+
+@media (min-width: @desktop-width) {
+  .contacts__title {
+    .font-param(53px, 57px, "Open Sans Bold", @dark-font);
+  }
+}
