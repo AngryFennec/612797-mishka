@@ -1,8 +1,15 @@
-/*.catalog {
-
-}
-
 .catalog__title {
-
+  .font-param(27px, 30px, "Open Sans Bold", @dark-font);
 }
-*/
+
+@media (min-width: @tablet-width) {
+  .catalog__title {
+    .font-param(43px, 50px, "Open Sans Bold", @dark-font);
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .catalog__title {
+    .font-param(53px, 57px, "Open Sans Bold", @dark-font);
+  }
+}

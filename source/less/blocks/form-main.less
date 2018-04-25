@@ -3,8 +3,19 @@
   flex-direction: column;
   justify-content: flex-start;
 }
-/*
-.form-main__header {
 
+.form-main__header {
+  .font-param(27px, 30px, "Open Sans Bold", @dark-font);
 }
-*/
+
+@media (min-width: @tablet-width) {
+  .form-main__header {
+    .font-param(43px, 50px, "Open Sans Bold", @dark-font);
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .form-main__header {
+    .font-param(53px, 57px, "Open Sans Bold", @dark-font);
+  }
+}

@@ -13,6 +13,7 @@
   background-position: center center;
   background-size: auto;
   min-height: 286px;
+  .font-param(27px, 30px, "Open Sans Bold", @dark-font);
 }
 
 .head__list {
@@ -43,6 +44,10 @@
   .head {
     height: 748px;
   }
+
+  .head__title {
+    .font-param(43px, 50px, "Open Sans Bold", @dark-font);
+  }
 }
 
 @media (min-width: @desktop-width) {
@@ -53,5 +58,9 @@
 
   .head {
     height: 748px;
+  }
+
+  .head__title {
+    .font-param(53px, 57px, "Open Sans Bold", @dark-font);
   }
 }
