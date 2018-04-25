@@ -3,6 +3,8 @@
   outline: 2px solid green;
   margin-left: 30px;
   margin-right: 30px;
+  display: flex;
+  flex-direction: column;
 }
 
 .promo__title {
@@ -24,8 +26,55 @@
 .promo__price {
   .font-param(17px, 24px, "Open Sans Bold", @lighter-font);
 }
-/*
-.promo__button {
 
+.promo__head {
+  display: flex;
+  flex-direction: column;
 }
-*/
+
+.promo__content {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: @tablet-width) {
+  .promo__head {
+    flex-direction: row;
+  }
+
+  .promo__description {
+    width: 300px;
+  }
+
+  .promo__content {
+    height: 452px;
+    flex-wrap: wrap;
+  }
+
+  .promo__photo {
+    order: 5;
+  }
+
+  .promo__title {
+    .font-param(43px, 50px, "Open Sans Bold", @dark-font);
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .promo__head {
+    flex-direction: row;
+  }
+
+  .promo__week {
+    order: 1;
+  }
+
+  .promo__title {
+    order: 5;
+    .font-param(53px, 57px, "Open Sans Bold", @dark-font);
+  }
+
+  .promo__photo {
+    order: 5;
+  }
+}

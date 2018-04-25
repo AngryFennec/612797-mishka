@@ -1,0 +1,28 @@
+.send-block {
+  height: 173px;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+}
+
+@media (min-width: @tablet-width) {
+  .send-block {
+    height: 157px;
+    flex-direction: row;
+  }
+
+  .send-block__required {
+    order: 5;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .send-block {
+    height: 154px;
+    flex-direction: row;
+  }
+
+  .send-block__required {
+    order: 5;
+  }
+}

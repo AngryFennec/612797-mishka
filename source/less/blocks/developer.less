@@ -1,13 +1,30 @@
 .developer {
-  background-color: @gray-back;
   height: 80px;
-  outline: 2px solid red;
   padding-left: 30px;
   padding-right: 30px;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
 }
 
 .developer__text {
+
   .font-param(19px, 18px, "Open Sans Bold", @dark-font);
+}
+
+@media (min-width: @tablet-width) {
+  .developer {
+    width: 186px;
+    padding: 0;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .developer {
+    width: 177px;
+    padding: 0;
+  }
 }
 /*
 .developer__link {

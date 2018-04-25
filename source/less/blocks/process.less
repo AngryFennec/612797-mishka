@@ -2,13 +2,20 @@
   min-height: 503px;
   outline: 2px solid green;
   margin-bottom: 58px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: no-wrap;
+}
+
+.process__header {
+  height: 97px;
 }
 
 .process__title {
   .font-param (17px, 24px, "Open Sans Bold", @dark-font);
 }
 
-.process__play {
+.process__video {
   height: 260px;
   background-color: @aquamarine;
   background-image: url("../img/video-mobile@1x.jpg");
@@ -17,10 +24,52 @@
   background-position: center center;
 }
 
+.process__order {
+  height: 256px;
+}
+
 .process__description {
   .font-param (13px, 24px, "Open Sans", @lighter-font);
 }
-/*
-.process__button {
 
-}*/
+@media (min-width: @tablet-width) {
+  .process__header {
+    height: 90px;
+    order: 2;
+  }
+
+  .process__video {
+    height: 458px;
+    order: 1;
+  }
+
+  .process__order {
+    height: 200px;
+    order: 3;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .process {
+    height: 455px;
+    flex-wrap: wrap;
+  }
+
+  .process__header {
+    width: 368px;
+    height: 155px;
+    order: 2;
+  }
+
+  .process__video {
+    width: 683px;
+    height: 455px;
+    order: 1;
+  }
+
+  .process__order {
+    width: 368px;
+    height: 300px;
+    order: 3;
+  }
+}

@@ -3,6 +3,13 @@
   outline: 2px solid yellow;
   margin-left: 30px;
   margin-right: 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+.messages__who-where {
+  display: flex;
+  flex-direction: column;
 }
 
 .messages__title {
@@ -20,7 +27,47 @@
 .messages__nickname {
   .font-param(17px, 30px, "Open Sans", @lighter-font);
 }
-/*
-.messages__button {
 
-}*/
+.messages__container {
+  position: relative;
+}
+
+@media (min-width: @tablet-width) {
+  .messages {
+    height: 537px;
+  }
+
+  .messages__who-where {
+    flex-direction: row;
+  }
+
+  .messages__button {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+  }
+
+  .messages__title {
+    .font-param(43px, 50px, "Open Sans Bold", @dark-font);
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .messages {
+    height: 537px;
+  }
+
+  .messages__who-where {
+    flex-direction: row;
+  }
+
+  .messages__button {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+  }
+
+  .messages__title {
+    .font-param(53px, 57x, "Open Sans Bold", @dark-font);
+  }
+}

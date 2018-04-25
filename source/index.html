@@ -4,8 +4,9 @@
     <meta charset="utf-8">
     <title>HTML Academy: Мишка</title>
     <link href="./css/style.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
-  <body class="body-index">
+  <body class="body-index stabber">
     <header class="page-header">
       <h1 class="page-header__title visually-hidden">MISHKA</h1>
       <img class="page-header__logo" src="./img/logo-mobile.svg" width="86" height="35" alt="Логотип">
@@ -21,7 +22,7 @@
     </header>
     <main class="index-main">
       <article class="head">
-        <div class="header-block">
+        <div class="header-block index-main__header">
           <h1 class="head__title">Милые штуки ручной работы для дома</h1>
         </div>
         <ul class="head__list">
@@ -30,26 +31,30 @@
         </ul>
       </article>
       <article class="promo">
-        <h2 class="promo__title">Вязаные корзинки</h2>
-        <p class="promo__week">Товар недели</p>
-        <p class="promo__description">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.</p>
-        <table class="params">
-          <tr class="params__row">
-            <td class="params__title">Цвет:</td>
-            <td class="params__value">"Тиффани"/серый</td>
-          </tr>
-          <tr class="params__row">
-            <td class="params__title">Диаметр:</td>
-            <td class="params__value">25 см</td>
-          </tr>
-          <tr class="params__row">
-            <td class="params__title">Высота:</td>
-            <td class="params__value">15 см</td>
-          </tr>
-        </table>
-        <img class="promo__photo"  src="./img/triple-set-mobile@1x.jpg" width="260" height="315" alt="Фото корзинок">
-        <p class="promo__price">Цена: 990 руб.</p>
-        <a class="promo__button button" href=#>Заказать</a>
+        <div class="promo__head">
+          <h2 class="promo__title">Вязаные корзинки</h2>
+          <p class="promo__week">Товар недели</p>
+        </div>
+        <div class="promo__content">
+          <p class="promo__description">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках и трех размерах.</p>
+          <table class="params">
+            <tr class="params__row">
+              <td class="params__title">Цвет:</td>
+              <td class="params__value">"Тиффани"/серый</td>
+            </tr>
+            <tr class="params__row">
+              <td class="params__title">Диаметр:</td>
+              <td class="params__value">25 см</td>
+            </tr>
+            <tr class="params__row">
+              <td class="params__title">Высота:</td>
+              <td class="params__value">15 см</td>
+            </tr>
+          </table>
+          <img class="promo__photo"  src="./img/triple-set-mobile@1x.jpg" width="260" height="315" alt="Фото корзинок">
+          <p class="promo__price">Цена: 990 руб.</p>
+          <a class="promo__button button" href=#>Заказать</a>
+        </div>
       </article>
       <section class="features">
         <h2 class="features__title">Коротко о нас</h2>
@@ -63,35 +68,56 @@
         </ul>
       </section>
       <section class="messages">
-        <h2 class="messages__title">Отзывы</h2>
-        <p class="messages__text">Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!</p>
-        <b class="messages__author">Анастасия Красильникова</b>
-        <p class="messages__nickname">@misssssiskras</p>
-        <div class="message-navigation">
-          <a class="message-navigation__left" href=#>Влево</a>
-          <a class="message-navigation__right" href=#>Вправо</a>
+        <div class="messages__container">
+          <h2 class="messages__title">Отзывы</h2>
+          <p class="messages__text">Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!</p>
+          <div class="messages__who-where">
+            <b class="messages__author">Анастасия Красильникова</b>
+            <p class="messages__nickname">@misssssiskras</p>
+            <div class="message-navigation">
+              <a class="message-navigation__left" href=#>Влево</a>
+              <a class="message-navigation__right" href=#>Вправо</a>
+            </div>
+          </div>
+          <a class="messages__button  button" href=#>Написать</a>
         </div>
-        <a class="messages__button  button" href=#>Написать</a>
       </section>
-      <section class="contacts">
-        <b class="contacts__title">Контакты</b>
-        <p class="contacts__email-label">e-mail:</p>
-        <a class="contacts__email-adress" href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a>
-        <p class="contacts__adress-label">адрес:</p>
-        <p class="contacts__adress">г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101</p>
-      </section>
-      <section class="map">
-        <img  src="./img/map-mobile@1x.jpg" width="320" height="458" alt="Карта">
-      </section>
-      <section class="write-us">
-        <a class="write-us__button  button" href=#>Напишите нам</a>
-      </section>
+      <article class="about-us">
+        <section class="contacts">
+          <b class="contacts__title">Контакты</b>
+          <p class="contacts__email-label">e-mail:</p>
+          <a class="contacts__email-adress" href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a>
+          <p class="contacts__adress-label">адрес:</p>
+          <p class="contacts__adress">г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101</p>
+        </section>
+        <section class="map">
+          <img  src="./img/map-mobile@1x.jpg" width="320" height="458" alt="Карта">
+        </section>
+        <section class="write-us">
+          <a class="write-us__button  button" href=#>Напишите нам</a>
+        </section>
+      </article>
       <footer class="page-footer">
+        <div class="footer-logo">
+          <img src="./img/logo-mobile.svg" width="86" height="35" alt="Логотип">
+        </div>
         <div class="social">
           <ul class="social-list">
-            <li class="social-list__item">Instagram</li>
-            <li class="social-list__item">Facebook</li>
-            <li class="social-list__item">Twitter</li>
+            <li class="social-list__item">
+              <a class="social-list__link" href="#">
+                <span class="visually-hidden">Instagram</span>
+              </a>
+            </li>
+            <li class="social-list__item">
+              <a class="social-list__link" href="#">
+                <span class="visually-hidden">Facebook</span>
+              </a>
+            </li>
+            <li class="social-list__item">
+              <a class="social-list__link" href="#">
+                <span class="visually-hidden">Twitter</span>
+              </a>
+            </li>
           </ul>
         </div>
         <div class="developer">

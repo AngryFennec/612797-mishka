@@ -1,3 +1,21 @@
 .button {
   .font-param(17px, 16px, "Open Sans Bold", @lighter-font);
+  text-transform: uppercase;
+  width: 292px;
+  height: 50px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  text-align: center;
+  border: 2px solid @lighter-font;
+  outline: none;
+
+  &:hover {
+    background-color: @lighter-font;
+    color: @white-font;
+  }
+
+  &:active {
+    background-color: @lighter-font;
+    color: @white-font-30;
+  }
 }

@@ -1,0 +1,39 @@
+.info-container {
+  height: 214px;
+  display: flex;
+  flex-direction: column;
+}
+
+.info-container__legend-mail,
+.info-container__legend-phone {
+  width: 100px;
+}
+
+.info-container__input {
+  width: 100px;
+}
+
+
+@media (min-width: @tablet-width) {
+  .info-container {
+    height: 230px;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .info-container__input {
+    width: 550px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .info-container {
+    height: 230px;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .info-container__input {
+    width: 1050px;
+  }
+}
