@@ -6,6 +6,9 @@
   justify-content: flex-start;
 }
 
+.catalog-main__title {
+  .font-param(27px, 30px, "Open Sans Bold", @dark-font);
+}
 
 .catalog-main__header {
   margin-bottom: 82px;
@@ -20,11 +23,19 @@
   .catalog-main__goods {
     flex-direction: column;
   }
+
+  .catalog-main__title {
+    .font-param(43px, 50px, "Open Sans Bold", @dark-font);
+  }
 }
 
 @media (min-width: @desktop-width) {
   .catalog-main__goods {
     flex-direction: row;
     justify-content: space-between;
+  }
+
+  .catalog-main__title {
+    .font-param(53px, 57px, "Open Sans Bold", @dark-font);
   }
 }
