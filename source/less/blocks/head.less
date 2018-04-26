@@ -7,12 +7,20 @@
   height: 488px;
 }
 
-.head__title {
+.head__block {
   background-image: url("../img/hero-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: auto;
   min-height: 286px;
+}
+
+.head__title {
+  margin: 0;
+  padding-top: 45px;
+  padding-left: 30px;
+  padding-right: 30px;
+  text-align: center;
   .font-param(27px, 30px, "Open Sans Bold", @dark-font);
 }
 
@@ -25,6 +33,10 @@
 
 .head__list-item {
   min-height: 103px;
+  padding-left: 30px;
+  padding-right: 160px;
+  padding-top: 23px;
+  padding-bottom: 23px;
 
   &:first-child {
     background-color: @aqua-dark;
