@@ -1,6 +1,6 @@
 .catalog-item {
   min-height: 376px;
-  margin-top: 30px;
+  margin-top: 29px;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -12,7 +12,7 @@
 }
 
 .catalog-item__order {
-  height: 178px;
+  height: 179px;
   display: flex;
   flex-direction: column;
 }
@@ -42,7 +42,6 @@
   width: 20px;
   height: 19px;
   top: 20px;
-  right: 0px;
 }
 
 .catalog-item__price {
@@ -68,7 +67,12 @@
 }
 
 .catalog-item:last-child {
+  min-height: 399px;
   margin-bottom: 30px;
+}
+
+.catalog-item:last-child .catalog-item__info {
+  margin-bottom: 22px;
 }
 
 @media (min-width: @tablet-width) {

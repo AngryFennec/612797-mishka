@@ -1,6 +1,6 @@
 .process {
   min-height: 503px;
-  margin-bottom: 58px;
+  margin-bottom: 50px;
   display: flex;
   flex-direction: column;
   flex-wrap: no-wrap;
@@ -12,15 +12,27 @@
 .process__header {
   margin: 0;
   height: 97px;
+  position: relative;
 }
 
 .process__title {
   margin: 0;
   .font-param (17px, 24px, "Open Sans Bold", @dark-font);
-  padding-left: 91px;
+  padding-left: 89px;
   padding-right: 41px;
-  padding-top: 26px;
+  padding-top: 22px;
   padding-bottom: 21px;
+}
+
+.process__title::before {
+  content: "";
+  position: absolute;
+  background-image: url("../img/icon-video.svg");
+  background-repeat: no-repeat;
+  width: 32px;
+  height: 35px;
+  top: 26px;
+  left: 32px;
 }
 
 .process__video {
@@ -34,7 +46,7 @@
 
 .process__order {
   height: 256px;
-  padding-top: 35px;
+  padding-top: 24px;
   padding-left: 28px;
   padding-right: 35px;
 }
@@ -42,13 +54,16 @@
 .process__description {
   margin: 0;
   .font-param (13px, 24px, "Open Sans", @lighter-font);
-  margin-bottom: 30px;
+  margin-bottom: 38px;
+  padding-left: 5px;
 }
 
 .process__button {
-  width: 192px;
+  width: 186px;
+  white-space: nowrap;
   height: 50px;
-  padding: 11.4px 26px; /*хз откуда вылезла граница 1.6,из-за нее пришлось подгонять паддинги*/
+  margin-left: 5px;
+  padding: 12px 25px; /*хз откуда вылезла граница 1.6,из-за нее пришлось подгонять паддинги*/
 }
 
 @media (min-width: @tablet-width) {
