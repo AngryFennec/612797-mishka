@@ -67,14 +67,26 @@
 }
 
 @media (min-width: @tablet-width) {
+  .process {
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+
   .process__header {
     height: 90px;
     order: 2;
+    padding-top: 15px;
+    padding-left: 17px;
   }
 
   .process__video {
-    height: 458px;
+    padding: 0;
+    min-height: 455px;
     order: 1;
+    background-image: url("../img/video-tablet@1x.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 668px 455px;
   }
 
   .process__order {
