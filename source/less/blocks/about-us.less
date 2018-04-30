@@ -1,7 +1,21 @@
 .about-us {
   height: 899px;
+  position: relative;
   display: flex;
   flex-direction: column;
+}
+
+.about-us::before {
+  content: "";
+  position: absolute;
+  width: 320px;
+  height: 6px;
+  background-image: url("../img/bg-zigzag-line.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 320px 6px;
+  top: 1px;
+  left: -30px;
 }
 
 @media (min-width: @tablet-width) {

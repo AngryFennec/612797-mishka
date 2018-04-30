@@ -104,8 +104,8 @@
             <b class="messages__author">Анастасия Красильникова</b>
             <p class="messages__nickname">@misssssiskras</p>
             <div class="message-navigation">
-              <a class="message-navigation__left" href=#>Влево</a>
-              <a class="message-navigation__right" href=#>Вправо</a>
+              <a class="message-navigation__left" href=#><span class="visually-hidden">Влево</span></a>
+              <a class="message-navigation__right" href=#><span class="visually-hidden">Вправо</span></a>
             </div>
           </div>
           <a class="messages__button  button" href=#>Написать</a>
@@ -114,10 +114,14 @@
       <article class="about-us">
         <section class="contacts">
           <b class="contacts__title">Контакты</b>
-          <p class="contacts__email-label">e-mail:</p>
-          <a class="contacts__email-adress" href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a>
-          <p class="contacts__adress-label">адрес:</p>
-          <p class="contacts__adress">г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101</p>
+          <div class="contacts__email-block">
+            <p class="contacts__email-label">e-mail:</p>
+            <a class="contacts__email-adress" href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a>
+          </div>
+          <div class="contacts__adress-block">
+            <p class="contacts__adress-label">адрес:</p>
+            <p class="contacts__adress">г. Санкт-Петербург, ул. Большая Конюшенная,<br> д. 19/8, офис 101</p>
+          </div>
         </section>
         <section class="map">
           <img  src="./img/map-mobile@1x.jpg" width="320" height="458" alt="Карта">

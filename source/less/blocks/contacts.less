@@ -1,22 +1,37 @@
 .contacts {
   .font-param(15px, 30px, "Open Sans", @lighter-font);
   min-height: 314px;
-  outline: 2px solid red;
   margin-left: 30px;
   margin-right: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.contacts__adress-block {
+  display: flex;
+}
+
+.contacts__email-block {
+  display: flex;
+  min-height: 45px;
 }
 
 .contacts__title {
   .font-param(18px, 30px, "Open Sans Bold", @dark-font);
+  padding-top: 44px;
 }
-/*
-.contacts__email-label {
 
+.contacts__email-label {
+  margin-top: 24px;
+  padding-right: 29px;
 }
-*/
+
 .contacts__email-adress {
   color: @lighter-font;
-  border-bottom: 1px solid @mail-font;
+  border-bottom: 2px solid @mail-font;
+  margin-top: 24px;
+  margin-bottom: 17px;
 
   &:hover {
     color: @mail-font;
@@ -27,6 +42,17 @@
     color: @mail-font-30;
     border-bottom: 1px solid @mail-under-light;
   }
+}
+
+.contacts__adress-label {
+  margin-top: 13px;
+  padding-right: 29px;
+}
+
+.contacts__adress {
+  margin-top: 13px;
+  padding-right: 29px;
+  padding-left: 1px;
 }
 
 @media (min-width: @tablet-width) {
