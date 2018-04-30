@@ -4,16 +4,75 @@
   flex-direction: column;
 }
 
-.info-container__legend-mail,
+.info-container__legend-mail {
+  width: 100px;
+  padding-top: 32px;
+  position: relative;
+}
+
 .info-container__legend-phone {
   width: 100px;
+  padding-top: 10px;
+  position: relative;
 }
 
-.info-container__input {
-  width: 100px;
+.info-container__input-phone {
+  width: 100%;
+  padding-top: 22px;
+  padding-bottom: 18px;
+  outline: none;
+  margin-left: -2px;
+  border: none;
+  border-bottom: 2px solid @dark-font;
+  position: relative;
+  background: url("../img/icon-phone.svg") no-repeat 97% 50%;
 }
 
+.info-container__input-mail {
+  width: 100%;
+  padding-top: 22px;
+  padding-bottom: 18px;
+  margin-left: -2px;
+  border: none;
+  border-bottom: 2px solid @dark-font;
+  position: relative;
+  background: url("../img/icon-mail.svg") no-repeat 99% 62%;
+}
 
+/*
+.info-container__legend-phone::after {
+  content: "";
+  position: absolute;
+  z-index: 10;
+  display: inline-block;
+  vertical-align: baseline;
+  top: 44px;
+  right: -152px;
+  width: 25px;
+  height: 24px;
+  background-image: url("../img/icon-phone.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 25px 24px;
+  opacity: 0.2;
+}
+
+.info-container__legend-mail::after {
+  content: "";
+  position: absolute;
+  display: inline-block;
+  vertical-align: baseline;
+  top: 5px;
+  right: 5px;
+  width: 32px;
+  height: 21px;
+  background-image: url("../img/icon-mail.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 32px 21px;
+  opacity: 0.2;
+}
+*/
 @media (min-width: @tablet-width) {
   .info-container {
     height: 230px;
