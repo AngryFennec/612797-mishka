@@ -79,6 +79,19 @@
     padding-left: 17px;
   }
 
+  .process__title {
+    margin: 0;
+    padding: 0;
+    padding-top: 23px;
+    padding-left: 89px;
+    .font-param (20px, 24px, "Open Sans Bold", @dark-font);
+  }
+
+  .process__title::before {
+    top: 33px;
+    left: 40px;
+  }
+
   .process__video {
     padding: 0;
     min-height: 455px;
@@ -91,7 +104,23 @@
 
   .process__order {
     height: 200px;
+    margin: 0;
+    padding: 0;
     order: 3;
+  }
+
+  .process__description {
+    .font-param (15px, 30px, "Open Sans", @lighter-font);
+    padding-left: 40px;
+    padding-top: 5px;
+    padding-right: 40px;
+    margin-bottom: 36px;
+  }
+
+  .process__button {
+    width: 584px;
+    padding-top: 15px;
+    margin-left: 40px;
   }
 }
 

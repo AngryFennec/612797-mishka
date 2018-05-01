@@ -16,6 +16,7 @@
 
 .catalog-main__header {
   margin: 0;
+  position: relative;
 }
 
 .catalog-main__goods {
@@ -35,6 +36,17 @@
   .catalog-main__header {
     margin: 0;
     padding: 0;
+  }
+
+  .catalog-main__header::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 16px;
+    background: url("../img/bg-zigzag-fill.svg") repeat-x;
+    background-size: 768px 16px;
+    top: 212px;
+    z-index: 10;
   }
 
   .catalog-main__title {
