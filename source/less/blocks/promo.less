@@ -53,25 +53,66 @@
 }
 
 @media (min-width: @tablet-width) {
+  .promo {
+    min-height: 610px;
+  }
+
   .promo__head {
     flex-direction: row;
   }
 
   .promo__description {
-    width: 300px;
+    width: 320px;
+    .font-param(17px, 30px, "Open Sans", @lighter-font);
+    padding-top: 50px;
+    padding-left: 20px;
   }
 
   .promo__content {
-    height: 452px;
+    height: 463px;
     flex-wrap: wrap;
   }
 
   .promo__photo {
     order: 5;
+    margin-top: 60px;
+    margin-left: 16px;
+
+    & img {
+      width: 333px;
+      height: 404px;
+    }
   }
 
   .promo__title {
     .font-param(43px, 50px, "Open Sans Bold", @dark-font);
+    padding-top: 40px;
+    padding-left: 16px;
+  }
+
+  .promo__week {
+    margin: 0;
+    padding: 0;
+    width: 80px;
+    margin-left: 142px;
+    padding-top: 52px;
+    text-align: center;
+    .font-param(17px, 17px, "Open Sans Bold", @aqua-dark);
+  }
+
+  .promo__price {
+    margin: 0;
+    padding: 0;
+    width: 320px;
+    margin-top: 56px;
+    padding-left: 8px;
+    .font-param(20px, 24px, "Open Sans Bold", @lighter-font);
+  }
+
+  .promo__button {
+    width: 292px;
+    margin-top: 36px;
+    margin-left: 19px;
   }
 }
 

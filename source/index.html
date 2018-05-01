@@ -85,7 +85,11 @@
               <td class="params__value">15 см</td>
             </tr>
           </table>
-          <img class="promo__photo"  src="./img/triple-set-mobile@1x.jpg" width="260" height="315" alt="Фото корзинок">
+          <picture class="promo__photo">
+            <source media="(min-width: 1250px)" srcset="img/triple-set-desktop@1x.jpg">
+            <source media="(min-width: 768px)" srcset="img/triple-set-tablet@1x.jpg">
+            <img src="./img/triple-set-mobile@1x.jpg" width="260" height="315" alt="Фото корзинок">
+          </picture>
           <p class="promo__price">Цена: 990 руб.</p>
           <a class="promo__button button" href=#>Заказать</a>
         </div>
@@ -106,8 +110,10 @@
           <h2 class="messages__title">Отзывы</h2>
           <p class="messages__text">Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!</p>
           <div class="messages__who-where">
-            <b class="messages__author">Анастасия Красильникова</b>
-            <p class="messages__nickname">@misssssiskras</p>
+            <div class="messages__who">
+              <b class="messages__author">Анастасия Красильникова</b>
+              <p class="messages__nickname">@misssssiskras</p>
+            </div>
             <div class="message-navigation">
               <a class="message-navigation__left" href=#><span class="visually-hidden">Влево</span></a>
               <a class="message-navigation__right" href=#><span class="visually-hidden">Вправо</span></a>
@@ -119,17 +125,23 @@
       <article class="about-us">
         <section class="contacts">
           <b class="contacts__title">Контакты</b>
-          <div class="contacts__email-block">
-            <p class="contacts__email-label">e-mail:</p>
-            <a class="contacts__email-adress" href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a>
-          </div>
-          <div class="contacts__adress-block">
-            <p class="contacts__adress-label">адрес:</p>
-            <p class="contacts__adress">г. Санкт-Петербург, ул. Большая Конюшенная,<br> д. 19/8, офис 101</p>
+          <div class="contacts__text-block">
+            <div class="contacts__email-block">
+              <p class="contacts__email-label">e-mail:</p>
+              <a class="contacts__email-adress" href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a>
+            </div>
+            <div class="contacts__adress-block">
+              <p class="contacts__adress-label">адрес:</p>
+              <p class="contacts__adress">г. Санкт-Петербург, <br>ул. Большая Конюшенная,<br> д. 19/8, офис 101</p>
+            </div>
           </div>
         </section>
         <section class="map">
-          <img  src="./img/map-mobile@1x.jpg" width="320" height="458" alt="Карта">
+          <picture class="map__photo">
+            <source media="(min-width: 1250px)" srcset="./img/map-desktop@1x.jpg">
+            <source media="(min-width: 768px)" srcset="./img/map-tablet@1x.jpg">
+            <img  src="./img/map-mobile@1x.jpg" width="320" height="458" alt="Карта">
+          </picture>
         </section>
         <section class="write-us">
           <a class="write-us__button  button" href=#>Напишите нам</a>

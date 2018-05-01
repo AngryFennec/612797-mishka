@@ -135,13 +135,94 @@
   }
 
   .features__list {
-    height: 400px;
+    height: 500px;
     flex-wrap: wrap;
     .font-param (20px, 22px, "Open Sans Bold", @dark-font);
   }
 
   .features__title {
     .font-param (43px, 50px, "Open Sans Bold", @dark-font);
+    padding-top: 60px;
+    padding-left: 44px;
+  }
+
+  .features::before {
+    content: "";
+    position: absolute;
+    width: 772px;
+    height: 17px;
+    background-image: url("../img/bg-zigzag-line.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 768px 17px;
+    top: -4px;
+    left: -25px;
+  }
+
+  .features__list-item {
+    width: 334px;
+
+    &:first-child {
+      margin-top: 103px;
+      padding-right: 105px;
+      padding-left: 21px;
+
+      &::before {
+        top: -54px;
+        left: 29px;
+      }
+    }
+
+    &:nth-child(2) {
+      margin-top: 110px;
+      padding-right: 60px;
+      padding-left: 21px;
+
+      &::before {
+        top: -52px;
+        left: 20px;
+      }
+    }
+
+    &:nth-child(3) {
+      margin-top: 112px;
+      padding-right: 80px;
+      padding-left: 21px;
+
+      &::before {
+        top: -48px;
+        left: 27px;
+      }
+    }
+
+    &:nth-child(4) {
+      margin-top: 102px;
+      padding-right: 40px;
+
+      &::before {
+        top: -52px;
+        left: 3px;
+      }
+    }
+
+    &:nth-child(5) {
+      margin-top: 111px;
+
+      &::before {
+        top: -50px;
+        left: -6px;
+      }
+    }
+
+    &:nth-child(6) {
+      margin-top: 111px;
+      padding-right: 40px;
+
+      &::before {
+        top: -52px;
+        left: 3px;
+      }
+    }
   }
 }
 

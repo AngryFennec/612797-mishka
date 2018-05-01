@@ -11,6 +11,11 @@
   flex-direction: column;
 }
 
+.messages__who {
+  dsplay: flex;
+  flex-direction: column;
+}
+
 .messages__title {
   .font-param(25px, 30px, "Open Sans Bold", @dark-font);
   margin: 0;
@@ -45,25 +50,47 @@
 
 @media (min-width: @tablet-width) {
   .messages {
-    height: 537px;
+    min-height: 537px;
+    background-image: url("../img/review@1x.jpg");
+    background-repeat: no-repeat;
+    background-position: -9% 0%;
+    position: relative;
   }
 
   .messages__who-where {
     flex-direction: row;
+    padding-top: 59px;
+    padding-left: 20px;
   }
+
 
   .messages__button {
     position: absolute;
-    top: 20px;
+    top: 46px;
     right: 20px;
+    width: 175px;
+    .font-param(17px, 20px, "Open Sans Bold", @lighter-font);
   }
 
   .messages__title {
     .font-param(43px, 50px, "Open Sans Bold", @dark-font);
+    padding-top: 80px;
+    padding-left: 16px;
+  }
+
+  .messages__text {
+    padding-top: 50px;
+    padding-left: 19px;
+    padding-right: 10px;
+    .font-param(17px, 30px, "Open Sans", @lighter-font);
+  }
+
+  .messages__author {
+    .font-param(18px, 24px, "Open Sans Bold", @dark-font);
   }
 }
 
-@media (min-width: @tablet-width) {
+@media (min-width: @desktop-width) {
   .messages {
     height: 537px;
   }

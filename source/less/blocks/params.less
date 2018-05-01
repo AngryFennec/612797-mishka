@@ -23,3 +23,21 @@
   border-bottom: 1px solid @lighter-font;
   outline: none;
 }
+
+@media (min-width: @tablet-width) {
+  .params {
+    .font-param(15px, 20px, "Open Sans", @lighter-font);
+    width: 315px;
+    margin-top: 35px;
+  }
+
+  .params__title {
+    padding: 0;
+    padding-left: 22px;
+  }
+
+  .params__value {
+    padding: 0;
+    padding-left: 13px;
+  }
+}
