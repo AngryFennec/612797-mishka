@@ -12,14 +12,36 @@
 .page-header__logo {
   margin-top: 23px;
   margin-left: 87px;
+
+  & img {
+    width: 86px;
+    height: 35px;
+  }
 }
 
 @media (min-width: @tablet-width) {
   .page-header {
-    height: 90px;
+    min-height: 90px;
+  }
+
+  .page-header__logo {
+    margin: 0;
+    padding: 0;
+    margin-left: 18px;
+    margin-top: 10px;
+    z-index: 5;
+  }
+
+  .page-header__logo img {
+    margin-top: 21px;
+    width: 113px;
+    height: 46px;
   }
 }
 
 @media (min-width: @desktop-width) {
-  height: 88px;
+  .page-header__logo img {
+    width: 149px;
+    height: 72px;
+  }
 }

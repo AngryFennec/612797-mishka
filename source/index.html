@@ -38,7 +38,12 @@
   <body class="body-index stabber">
     <header class="page-header">
       <h1 class="page-header__title visually-hidden">MISHKA</h1>
-      <img class="page-header__logo" src="./img/logo-mobile.svg" width="86" height="35" alt="Логотип">
+      <picture class="page-header__logo">
+        <source media="(min-width: 1250px)" srcset="img/logo-desktop.svg">
+        <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+        <img src="./img/logo-mobile.svg" width="86" height="35" alt="Логотип">
+      </picture>
+      <!--<img class="page-header__logo" src="./img/logo-mobile.svg" width="86" height="35" alt="Логотип">-->
       <nav class="page-navigation">
           <button class="page-navigation__open" href=#>Меню</button>
           <ul class="page-menu">
