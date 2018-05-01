@@ -55,6 +55,50 @@
   .type-container {
     height: 193px;
     flex-direction: row;
+    margin-left: 50px;
+  }
+
+  .type-container__legend {
+    padding-top: 73px;
+  }
+
+  .type-container__options {
+    width: 100%;
+    padding-left: 180px;
+  }
+
+  .type-container__label {
+    padding-left: 32px;
+    padding-top: 37px;
+    padding-bottom: 21px;
+    margin-bottom: 0;
+  }
+
+  .type-container__input + .type-container__label::before {
+    content: "";
+    position: absolute;
+    top: 22px;
+    left: -50px;
+
+    display: inline-block;
+    width: 53px;
+    height: 53px;
+    border: 2px solid @dark-font;
+    border-radius: 50%;
+    vertical-align: baseline;
+  }
+
+  .type-container__input:checked + .type-container__label::after {
+    content: "";
+    position: absolute;
+    display: inline-block;
+    vertical-align: baseline;
+    top: 38px;
+    left: -33px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: @aquamarine;
   }
 }
 

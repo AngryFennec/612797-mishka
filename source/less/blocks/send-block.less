@@ -16,12 +16,26 @@
 
 @media (min-width: @tablet-width) {
   .send-block {
-    height: 157px;
+    height: 139px;
     flex-direction: row;
+    justify-content: flex-start;
+    padding-bottom: 45px;
+    margin: 0;
   }
 
   .send-block__required {
     order: 5;
+    margin-left: 100px;
+    .font-param(17px, 30px, "Open Sans", @lighter-font);
+    padding-top: 39px;
+    padding-left: 37px;
+  }
+
+  .send-block__btn {
+    margin-left: 50px;
+    width: 229px;
+    margin-top: 48px;
+    .font-param(17px, 16px, "Open Sans Bold", @dark-font);
   }
 }
 

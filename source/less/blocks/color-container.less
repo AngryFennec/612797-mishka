@@ -58,14 +58,64 @@
 
 @media (min-width: @tablet-width) {
   .color-container {
-    height: 303px;
+    height: 310px;
     flex-direction: row;
+    padding-left: 22px;
+    width: 768px;
+    background-color: @gray-back;
+    margin-top: 44px;
+  }
+
+  .color-container__legend {
+    padding-top: 65px;
+    padding-left: 30px;
+    padding-right: 120px;
   }
 
   .color-container__options {
     flex-wrap: wrap;
-    height: 180px; /*от балды*/
-    width: 100%;
+    flex-direction: row;
+    width: 500px;
+    height: 175px; /*от балды*/
+  }
+
+  .color-container__label {
+    width: 200px;
+    padding-left: 18px;
+    padding-top: 23px;
+    margin-bottom: 36px;
+    margin-right: 0;
+  }
+
+  .color-container__label:nth-child(4n) {
+    width: 150px;
+    margin-left: 62px;
+    padding-left: 19px;
+  }
+
+  .color-container__label::before {
+    content: "";
+    position: absolute;
+    top: 9px;
+    left: -62px;
+    width: 53px;
+    height: 52px;
+    border: 2px solid @dark-font;
+  }
+
+  .color-container__input:checked + .color-container__label::after {
+    content: "";
+    position: absolute;
+    display: inline-block;
+    vertical-align: baseline;
+    top: 25px;
+    left: -52px;
+    width: 33px;
+    height: 22px;
+    background-image: url("../img/icon-tick.svg");
+    background-size: 33px 22px;
+    background-repeat: no-repeat;
+    background-position: center;
   }
 }
 

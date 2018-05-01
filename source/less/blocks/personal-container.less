@@ -24,25 +24,67 @@
   outline: none;
   border: none;
   padding-bottom: 5px;
-  outline-bottom: 2px solid @dark-font;
+  border-bottom: 2px solid @dark-font;
   margin-bottom: 35px;
+  flex-grow: 5;
 }
 
 @media (min-width: @tablet-width) {
   .personal-container {
-    height: 305px;
+    height: 298px;
     flex-direction: row;
     flex-wrap: wrap;
+  }
+
+  .personal-container__legend {
+    margin-left: 50px;
+    padding-top: 58px;
   }
 
   .personal-container__options {
-    width: 600px;
+    width: 630px;
     flex-direction: row;
     flex-wrap: wrap;
+    padding-left: 125px;
+    margin-top: 50px;
+    height: 210px;
   }
 
   .personal-container__input {
-    width: 500px;
+    margin: 0;
+    padding: 0;
+    border-bottom: 2px solid @dark-font;
+    height: 44px;
+    .font-param (19px, 18px, "Open Sans", @light-gray);
+    min-width: 370px;
+  }
+
+  .personal-container__label {
+    margin: 0;
+    padding: 0;
+    width: auto;
+    padding-right: 23px;
+    padding-top: 6px;
+  }
+
+  .personal-container__input:nth-child(2) {
+    width: 400px;
+  }
+
+  .personal-container__input:nth-child(4) {
+    margin-top: 18px;
+  }
+
+  .personal-container__input:nth-child(6) {
+    margin-top: 19px;
+  }
+
+  .personal-container__label:nth-child(3) {
+    margin-top: 17px;
+  }
+
+  .personal-container__label:nth-child(5) {
+    margin-top: 18px;
   }
 }
 
