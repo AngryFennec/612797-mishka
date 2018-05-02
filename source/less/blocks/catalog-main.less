@@ -59,11 +59,23 @@
 @media (min-width: @desktop-width) {
   .catalog-main__goods {
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: flex-start;
+    margin-top: 125px;
   }
 
   .catalog-main__title {
     .font-param(53px, 57px, "Open Sans Bold", @dark-font);
-    padding-left: 395px;
+    padding-left: 344px;
+  }
+
+  .catalog-main__header::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 34px;
+    background: url("../img/bg-zigzag-fill.svg") repeat-x;
+    background-size: 1150px 34px;
+    top: 233px;
+    z-index: 10;
   }
 }
