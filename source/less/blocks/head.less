@@ -117,6 +117,21 @@
   .head__list {
     flex-direction: row;
     justify-content: space-around;
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+
+  .head__list-item {
+    width: 525px;
+    padding-right: 450px;
+
+    &:first-child {
+      background-position: 92% 50%;
+    }
+
+    &:last-child {
+      background-position: 92% 50%;
+    }
   }
 
   .head {
@@ -125,5 +140,23 @@
 
   .head__title {
     .font-param(53px, 57px, "Open Sans Bold", @dark-font);
+  }
+
+  .head__block {
+    background-image: url("../img/hero-desktop@1x.jpg");
+    background-repeat: no-repeat;
+    background-position: 50% 5%;
+    min-height: 680px;
+  }
+
+  .head::after {
+    content: "";
+    position: absolute;
+    width: 1250px;
+    height: 34px;
+    background: url("../img/zigzag-fill-desktop.svg") repeat-x;
+    background-size: 1150px 34px;
+    top: 720px;
+    z-index: 10;
   }
 }

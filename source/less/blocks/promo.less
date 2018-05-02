@@ -117,20 +117,63 @@
 }
 
 @media (min-width: @desktop-width) {
+  .promo {
+    min-height: 780px;
+  }
+
+  .promo__content {
+    height: 643px;
+    flex-wrap: wrap;
+  }
+
   .promo__head {
     flex-direction: row;
+    padding-top: 80px;
+    margin-left: 0;
+    padding-left: 0;
+    position: relative;
   }
 
   .promo__week {
     order: 1;
+    margin-left: 62px;
   }
 
   .promo__title {
+    position: absolute;
     order: 5;
     .font-param(53px, 57px, "Open Sans Bold", @dark-font);
+    z-index: 10;
+    top: 78px;
+    left: 173px;
   }
 
   .promo__photo {
     order: 5;
+    margin-top: -100px;
+    margin-left: 28px;
+
+    & img {
+      width: 525px;
+      height: 643px;
+    }
+  }
+
+  .promo__description {
+    margin-top: 8px;
+    margin-left: 175px;
+  }
+
+  .promo__price {
+    margin: 0;
+    padding: 0;
+    margin-top: 110px;
+    margin-left: 180px;
+  }
+
+  .promo__button {
+    width: 292px;
+    margin-top: 35px;
+    margin-left: 195px;
   }
 }
