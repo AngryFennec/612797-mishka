@@ -228,15 +228,34 @@
 
 @media (min-width: @desktop-width) {
   .features {
-    height: 680px;
+    height: 650px;
   }
 
   .features__list {
     flex-wrap: wrap;
     .font-param (20px, 22px, "Open Sans Bold", @dark-font);
+    margin-left: 204px;
+    margin-right: 202px;
   }
 
   .features__title {
     .font-param (53px, 57px, "Open Sans Bold", @dark-font);
+    margin: 0;
+    padding: 0;
+    padding-top: 48px;
+    padding-left: 220px;
+  }
+
+  .features::before {
+    content: "";
+    position: absolute;
+    width: 1150px;
+    height: 23px;
+    background-image: url("../img/bg-zigzag-line.svg");
+    background-repeat: repeat-x;
+    background-position: center;
+    background-size: 1050px 23px;
+    top: -30px;
+    left: 25px;
   }
 }

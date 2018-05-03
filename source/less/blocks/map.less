@@ -1,8 +1,11 @@
 .map {
-  background-color: @gray-back;
   min-height: 458px;
   width: 100%;
   padding-top: 5px;
+}
+
+.map__photo img {
+  background-color: @gray-back;
 }
 
 @media (min-width: @tablet-width) {
@@ -22,5 +25,14 @@
   .map {
     order: 5;
     width: 50%;
+    margin: 0;
+    padding: 0;
+    margin-top: 84px;
+    margin-left: -5px;
+  }
+
+  .map__photo img {
+    width: 525px;
+    height: 457px;
   }
 }

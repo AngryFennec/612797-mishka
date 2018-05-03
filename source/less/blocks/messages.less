@@ -93,19 +93,43 @@
 @media (min-width: @desktop-width) {
   .messages {
     height: 537px;
+    padding: 0;
+    background-position: 3% 0%;
   }
 
   .messages__who-where {
     flex-direction: row;
+    margin: 0;
+    padding: 0;
+    margin-top: 38px;
+    margin-left: 194px;
   }
 
   .messages__button {
     position: absolute;
-    top: 20px;
+    top: 44px;
     right: 20px;
   }
 
   .messages__title {
     .font-param(53px, 57x, "Open Sans Bold", @dark-font);
+    padding-left: 190px;
+    padding-top: 77px;
+  }
+
+  .messages__text {
+    padding-left: 194px;
+    padding-right: 125px;
+  }
+
+  .messages__author {
+    .font-param(17px, 30px, "Open Sans Bold", @dark-font);
+    padding-top: 8px;
+    padding-left: 2px;
+    margin-right: 219px;
+  }
+
+  .messages__nickname {
+    padding-top: 1px;
   }
 }
