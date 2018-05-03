@@ -123,11 +123,33 @@
   .color-container {
     height: 225px;
     flex-direction: row;
+    width: 100%;
   }
 
   .color-container__options {
     flex-wrap: wrap;
     width: 100%;
     height: 100px;/*от балды*/
+    padding-top: 42px;
+  }
+
+  .color-container__legend {
+    padding-top: 68px;
+    padding-left: 89px;
+    padding-right: 70px;
+  }
+
+  .color-container__label:nth-child(n) {
+    width: 200px;
+  }
+
+  .color-container__label:nth-child(6) {
+    margin-left: 64px;
+    margin-right: 0;
+  }
+
+  .color-container__label:nth-child(8) {
+    margin-left: 0;
+    margin-right: 62px;
   }
 }

@@ -89,6 +89,11 @@
 }
 
 @media (min-width: @desktop-width) {
+  .personal-container__legend {
+    margin-left: 110px;
+    padding-top: 70px;
+  }
+
   .personal-container {
     height: 305px;
     flex-direction: row;
@@ -96,12 +101,23 @@
   }
 
   .personal-container__options {
-    width: 900px;
+    width: 800px;
     flex-direction: row;
     flex-wrap: wrap;
+    padding-left: 74px;
+    padding-top: 12px;
   }
 
   .personal-container__input {
-    width: 800px;
+    min-width: 540px;
+    flex-grow: 5;
+  }
+
+  .personal-container__label:nth-child(3) {
+    margin-top: 22px;
+  }
+
+  .personal-container__label:nth-child(5) {
+    margin-top: 27px;
   }
 }
