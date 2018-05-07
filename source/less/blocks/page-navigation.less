@@ -1,4 +1,15 @@
 
 .page-navigation {
+  display: flex;
+  flex-direction: column;
+}
+
+.page-navigation__open {
   display: none;
+}
+
+@media (min-width: @tablet-width) {
+  .page-navigation {
+    flex-direction: row;
+  }
 }

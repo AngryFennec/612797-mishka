@@ -1,26 +1,29 @@
-.page-menu {
+.page-user-menu {
   display: flex;
   flex-direction: column;
   .reset-list();
   width: 100%;
 }
 
-.page-menu__item {
-  border-top: 1px solid @gray-back;
-  margin: 0 auto;
-}
-
-.page-menu__item a {
+.page-user-menu__item {
   display: inline-block;
   vertical-align: baseline;
   width: 100%;
+  text-align: center;
   padding: 27px 0;
   .font-param (16px, 24px, "Open Sans Bold", @lighter-font);
 }
 
 @media (min-width: @tablet-width) {
-  .page-menu {
+  .page-user-menu {
     flex-direction: row;
-    order: 5;
+  }
+
+  .page-user-menu__item {
+    white-space: nowrap;
+  }
+
+  .page-user-menu__item:first-child .page-user-menu__item-text {
+    display: none;
   }
 }
