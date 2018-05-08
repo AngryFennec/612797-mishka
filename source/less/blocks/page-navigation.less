@@ -2,14 +2,26 @@
 .page-navigation {
   display: flex;
   flex-direction: column;
+  position: relative;
 }
 
-.page-navigation__open {
+.page-navigation__delivery {
   display: none;
+}
+
+.page-navigation__button {
+  position: absolute;
+  top: 30px;
+  right: 30px;
 }
 
 @media (min-width: @tablet-width) {
   .page-navigation {
     flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .page-navigation__delivery {
+    display: block;
   }
 }

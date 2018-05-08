@@ -3,24 +3,36 @@
   flex-direction: column;
   .reset-list();
   width: 100%;
+  margin: 0 auto;
+  margin-top: 17px;
 }
 
 .page-menu__item {
   border-top: 1px solid @gray-back;
-  margin: 0 auto;
+  text-align: center;
 }
 
 .page-menu__item a {
   display: inline-block;
   vertical-align: baseline;
   width: 100%;
-  padding: 27px 0;
-  .font-param (16px, 24px, "Open Sans Bold", @lighter-font);
+  padding-top: 25px;
+  padding-bottom: 29px;
+  padding-right: 18px;
+  .font-param (17px, 24px, "Open Sans Bold", @lighter-font);
 }
 
 @media (min-width: @tablet-width) {
   .page-menu {
     flex-direction: row;
     order: 5;
+    margin-top: 0;
+  }
+
+  .page-menu__item a {
+    .font-param (15px, 24px, "Open Sans Bold", @lighter-font);
+    padding-top: 20px;
+    padding-left: 48px;
+    padding-right: 10px;
   }
 }
