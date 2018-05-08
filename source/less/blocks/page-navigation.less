@@ -3,6 +3,7 @@
   display: flex;
   flex-direction: column;
   position: relative;
+  z-index: 10;
 }
 
 .page-navigation__delivery {
@@ -23,5 +24,10 @@
 
   .page-navigation__delivery {
     display: block;
+    order: 7;
+    margin: 0;
+    padding-left: 103px;
+    padding-top: 20px;
+    .font-param (15px, 24px, "Open Sans", @lighter-font);
   }
 }
