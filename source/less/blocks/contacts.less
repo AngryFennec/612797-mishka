@@ -1,8 +1,9 @@
 .contacts {
   .font-param(15px, 30px, "Open Sans", @lighter-font);
   min-height: 314px;
-  margin-left: 30px;
-  margin-right: 30px;
+  width: 320px;
+  margin: auto;
+  padding: 0 30px;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -62,6 +63,11 @@
 }
 
 @media (min-width: @tablet-width) {
+  .contacts {
+    margin: 0 auto;
+    width: 768px;
+  }
+
   .contacts__title {
     .font-param(43px, 50px, "Open Sans Bold", @dark-font);
     padding-top: 71px;
@@ -101,7 +107,7 @@
     width: 47px;
     height: 81px;
     top: 55px;
-    right: 22px;
+    right: 50px;
   }
 }
 
