@@ -2,6 +2,12 @@
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
+  margin: 0 auto;
+}
+
+.form-main__header {
+  margin: 0 auto;
+  width: 100%;
 }
 
 .form-main__title {
@@ -12,18 +18,19 @@
 
 @media (min-width: @tablet-width) {
   .form-main {
-    margin: 0;
     padding: 0;
-    width: 768px;
   }
 
   .form-main__title {
     .font-param(43px, 50px, "Open Sans Bold", @dark-font);
-    padding-top: 63px;
+    padding-top: 65px;
   }
 
   .form-main__header {
     position: relative;
+    margin: 0 auto;
+    margin-top: -70px;
+    width: 100%;
   }
 
   .form-main__header::after {
@@ -41,11 +48,14 @@
 @media (min-width: @desktop-width) {
   .form-main__title {
     .font-param(53px, 57px, "Open Sans Bold", @dark-font);
-    padding-top: 56px;
+    padding-top: 54px;
   }
 
-  .form-main {
-    width: 1150px;
+  .form-main__header {
+    position: relative;
+    margin: 0 auto;
+    margin-top: -54px;
+    width: 100%;
   }
 
   .form-main__header::after {

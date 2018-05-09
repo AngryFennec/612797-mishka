@@ -1,8 +1,9 @@
 .page-header {
   /*height: 80px;*/
-
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
+  width: @phone-width;
 }
 
 .page-header__logo {
@@ -17,7 +18,7 @@
 
 @media (min-width: @tablet-width) {
   .page-header {
-    width: auto;
+    width: @tablet-width;
     min-height: 90px;
     flex-direction: row;
     flex-wrap: wrap;
@@ -40,6 +41,10 @@
 }
 
 @media (min-width: @desktop-width) {
+  .page-header {
+    width: @desktop-width;
+  }
+
   .page-header__logo img {
     width: 149px;
     height: 72px;

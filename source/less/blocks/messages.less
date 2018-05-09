@@ -51,10 +51,12 @@
 
 @media (min-width: @tablet-width) {
   .messages {
+    margin-left: 0;
+    padding-left: 30px;
     min-height: 537px;
     background-image: url("../img/review@1x.jpg");
     background-repeat: no-repeat;
-    background-position: -9% 0%;
+    background-position: 0% 10%;
     position: relative;
   }
 
@@ -99,15 +101,16 @@
   .messages {
     height: 537px;
     padding: 0;
-    background-position: 3% 0%;
+    margin-left: 50px;
+    background-position: 0% 0%;
   }
 
   .messages__who-where {
     flex-direction: row;
     margin: 0;
     padding: 0;
-    margin-top: 38px;
-    margin-left: 194px;
+    margin-top: 39px;
+    margin-left: 175px;
   }
 
   .messages__button {
@@ -118,13 +121,14 @@
 
   .messages__title {
     .font-param(53px, 57x, "Open Sans Bold", @dark-font);
-    padding-left: 190px;
+    padding-left: 173px;
     padding-top: 77px;
   }
 
   .messages__text {
-    padding-left: 194px;
+    padding-left: 175px;
     padding-right: 125px;
+    padding-top: 51px;
   }
 
   .messages__author {
