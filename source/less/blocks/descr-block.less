@@ -1,6 +1,25 @@
 .descr-block__description {
   .font-param (13px, 24px, "Open Sans", @lighter-font);
-  outline: 2px solid blue;
   margin-left: 30px;
   margin-right: 30px;
+  padding-top: 10px;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+@media (min-width: @tablet-width) {
+  .descr-block__description {
+    .font-param (17px, 30px, "Open Sans", @lighter-font);
+    padding-top: 55px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .descr-block__description {
+    padding-top: 102px;
+    padding-left: 196px;
+    padding-right: 180px;
+  }
 }

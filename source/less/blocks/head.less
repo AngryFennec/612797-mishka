@@ -1,18 +1,31 @@
 .head {
   background-color: @gray-back;
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
   display: flex;
   flex-direction: column;
-  height: 488px;
+  min-height: 488px;
+  position: relative;
+  width: 100%;
+}
+
+.head__block {
+  padding-top: 24px;
+  background-image: url("../img/hero-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: 50% 20%;
+  background-size: auto;
+  min-height: 282px;
+  margin: 0 auto;
 }
 
 .head__title {
-  background-image: url("../img/hero-mobile@1x.jpg");
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: auto;
-  min-height: 286px;
+  margin: 0;
+  padding-top: 45px;
+  padding-left: 30px;
+  padding-right: 30px;
+  text-align: center;
+  .font-param(27px, 30px, "Open Sans Bold", @dark-font);
 }
 
 .head__list {
@@ -23,25 +36,85 @@
 }
 
 .head__list-item {
-  min-height: 103px;
+  min-height: 102px;
+  padding-left: 30px;
+  padding-right: 160px;
+  padding-top: 23px;
+  padding-bottom: 23px;
 
   &:first-child {
     background-color: @aqua-dark;
+    background-image: url("../img/icon-interior.svg");
+    background-repeat: no-repeat;
+    background-position: 87% 50%;
+    background-size: 40px 62px;
   }
 
   &:last-child {
     background-color: @aqua-darkest;
+    background-image: url("../img/icon-toy.svg");
+    background-repeat: no-repeat;
+    background-position: 90% 50%;
+    background-size: 60px 60px;
   }
 }
 
 @media (min-width: @tablet-width) {
+  .head {
+    min-height: 748px;
+    width: 100%;
+    margin: 0 auto;
+    margin-top: -70px;
+  }
+
   .head__list {
     flex-direction: row;
     justify-content: space-around;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: -53px;
+    .font-param(20px, 30px, "Open Sans Bold", @white-font);
+    position: relative;
+    min-height: 118px;
   }
 
-  .head {
-    height: 748px;
+  .head__block {
+    background-image: url("../img/hero-tablet@1x.jpg");
+    background-repeat: no-repeat;
+    background-position: 50% 5%;
+    min-height: 680px;
+  }
+
+  .head__title {
+    .font-param(43px, 50px, "Open Sans Bold", @dark-font);
+    padding-top: 128px;
+  }
+
+  .head__list-item {
+    padding: 0;
+    width: 334px;
+    padding-top: 27px;
+    padding-left: 36px;
+    padding-right: 120px;
+
+    &:first-child {
+      background-position: 87% 50%;
+    }
+
+    &:last-child {
+      background-position: 87% 50%;
+    }
+  }
+
+  .head::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 16px;
+    background: url("../img/bg-zigzag-fill.svg") repeat-x;
+    background-size: 768px 16px;
+    top: 734px;
+    z-index: 10;
   }
 }
 
@@ -49,9 +122,51 @@
   .head__list {
     flex-direction: row;
     justify-content: space-around;
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+
+  .head__list-item {
+    width: 525px;
+    padding-right: 450px;
+
+    &:first-child {
+      background-position: 92% 50%;
+    }
+
+    &:last-child {
+      background-position: 92% 50%;
+    }
   }
 
   .head {
     height: 748px;
+    width: 100%;
+    margin: 0 auto;
+    margin-top: -55px;
+  }
+
+  .head__title {
+    .font-param(53px, 57px, "Open Sans Bold", @dark-font);
+  }
+
+  .head__block {
+    background-image: url("../img/hero-desktop@1x.jpg");
+    background-repeat: no-repeat;
+    background-position: 50% 5%;
+    min-height: 680px;
+  }
+
+  .head::after {
+    content: "";
+    width: 1250px;
+    position: absolute;
+    height: 37px;
+    background-image: url("../img/bg-zigzag-fill.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    top: 727px;
+    z-index: 10;
+    left: -51px;
   }
 }

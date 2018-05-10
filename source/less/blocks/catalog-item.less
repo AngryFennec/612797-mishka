@@ -1,10 +1,10 @@
 .catalog-item {
-  min-height: 374px;
-  outline: 2px solid blue;
-  margin-top: 31px;
+  min-height: 376px;
+  margin-top: 29px;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
+  border: 1px solid @border-gray;
 }
 
 .catalog-item__photo {
@@ -12,59 +12,146 @@
 }
 
 .catalog-item__order {
-  height: 178px;
+  height: 179px;
   display: flex;
   flex-direction: column;
 }
 
 .catalog-item__info {
   height: 105px;
+  margin-left: 28px;
+  margin-right: 28px;
+  margin-top: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
 }
 
 .catalog-item__price-block {
   height: 73px;
+  position: relative;
+  margin-left: 28px;
+  margin-right: 28px;
+  border-top: 1px solid @border-gray;
 }
 
-.catalog-item__title {
-  .font-param(17px, 24px, "Open Sans Bold", @dark-font);
-}
-
-.catalog-item__description {
-  .font-param(13px, 30px, "Open Sans", @lighter-font);
+.catalog-item__price-block::after {
+  content: "";
+  position: absolute;
+  background-image: url("../img/icon-cart.svg");
+  width: 20px;
+  height: 19px;
+  top: 20px;
+  right: 0;
 }
 
 .catalog-item__price {
   .font-param(15px, 24px, "Open Sans Bold", @dark-font);
+  display: inline-block;
+  height: 100%;
+  vertical-align: center;
+  padding-top: 19px;
+  padding-bottom: 30px;
+}
+
+.catalog-item__title {
+  margin: 0;
+  padding: 0;
+  .font-param(17px, 24px, "Open Sans Bold", @dark-font);
+  margin-bottom: 5px;
+}
+
+.catalog-item__description {
+  .font-param(13px, 30px, "Open Sans", @lighter-font);
+  margin: 0;
+  padding: 0;
+}
+
+.catalog-item:last-child {
+  min-height: 399px;
+  margin-bottom: 30px;
+}
+
+.catalog-item:last-child .catalog-item__info {
+  margin-bottom: 22px;
 }
 
 @media (min-width: @tablet-width) {
   .catalog-item {
-    min-height: 335px;
-    margin-bottom: 55px;
+    min-height: 334px;
+    margin-top: 0;
+    margin-bottom: 52px;
     flex-direction: row;
   }
 
+  .catalog-item:first-child {
+    margin-top: 80px;
+  }
+
   .catalog-item__photo {
-    height: 335px;
+    padding: 0;
+    margin: 0;
+    width: 334px;
+  }
+
+  .catalog-item__photo img {
+    height: 334px;
+    width: 334px;
   }
 
   .catalog-item__order {
-    height: 337px;
+    height: 334px;
+    flex-grow: 2;
+    width: 334px;
   }
 
   .catalog-item__info {
     height: 263px;
+    margin: 0;
+    padding-top: 23px;
+    padding-left: 26px;
   }
 
-  .catalog-item__price-block {
-    height: 74px;
+  .catalog-item__title {
+    .font-param(20px, 24px, "Open Sans Bold", @dark-font);
+    padding-left: 2px;
+    padding-right: 70px;
+  }
+
+  .catalog-item__description {
+    .font-param(15px, 30px, "Open Sans", @lighter-font);
+  }
+
+  .catalog-item__price {
+    .font-param(17px, 24px, "Open Sans Bold", @dark-font);
+    padding-left: 3px;
+    text-align: center;
+  }
+
+  .catalog-item__price-block::after {
+    content: "";
+    position: absolute;
+    background-image: url("../img/icon-cart.svg");
+    width: 20px;
+    height: 19px;
+    top: 20px;
+    right: 4px;
+  }
+
+  .catalog-item:last-child {
+    min-height: 334px;
+    margin-bottom: 50px;
+  }
+
+  .catalog-item:last-child .catalog-item__info {
+    margin-bottom: 0;
   }
 }
 
 @media (min-width: @desktop-width) {
   .catalog-item {
     min-height: 659px;
-    margin-right: 50px;
+    margin-right: 56px;
     flex-direction: column;
   }
 
@@ -72,19 +159,47 @@
     margin-right: 0;
   }
 
+  .catalog-item:first-child {
+    margin-top: 0;
+  }
+
   .catalog-item__photo {
-    height: 462px;
+    height: 464px;
+    width: 310px;
+
+    & img {
+      height: 464px;
+      width: 310px;
+    }
   }
 
   .catalog-item__order {
     height: 169px;
+    width: 310px;
   }
 
   .catalog-item__info {
     height: 124px;
+    padding-left: 24px;
+    padding-top: 25px;
+  }
+
+  .catalog-item__title {
+    padding-left: 0;
+    padding-right: 50px;
   }
 
   .catalog-item__price-block {
-    height: 45px;
+    margin-left: 25px;
+  }
+
+  .catalog-item__price {
+    padding-top: 23px;
+    padding-left: 0;
+  }
+
+  .catalog-item__price-block::after {
+    top: 23px;
+    right: 2px;
   }
 }

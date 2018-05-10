@@ -1,51 +1,127 @@
 .process {
   min-height: 503px;
-  outline: 2px solid green;
-  margin-bottom: 58px;
+  margin-bottom: 50px;
   display: flex;
   flex-direction: column;
   flex-wrap: no-wrap;
+  margin-left: 30px;
+  margin-right: 30px;
+  border: 1px solid @border-gray;
 }
 
 .process__header {
+  margin: 0;
   height: 97px;
+  position: relative;
 }
 
 .process__title {
+  margin: 0;
   .font-param (17px, 24px, "Open Sans Bold", @dark-font);
+  padding-left: 89px;
+  padding-right: 41px;
+  padding-top: 22px;
+  padding-bottom: 21px;
+}
+
+.process__title::before {
+  content: "";
+  position: absolute;
+  background-image: url("../img/icon-video.svg");
+  background-repeat: no-repeat;
+  width: 32px;
+  height: 35px;
+  top: 26px;
+  left: 32px;
 }
 
 .process__video {
-  height: 260px;
+  min-height: 150px;
   background-color: @aquamarine;
   background-image: url("../img/video-mobile@1x.jpg");
   background-repeat: no-repeat;
-  background-size: 260px 150px;
   background-position: center center;
+  background-size: 260px auto;
 }
 
 .process__order {
   height: 256px;
+  padding-top: 24px;
+  padding-left: 28px;
+  padding-right: 35px;
 }
 
 .process__description {
+  margin: 0;
   .font-param (13px, 24px, "Open Sans", @lighter-font);
+  margin-bottom: 24px;
+  padding-left: 5px;
+}
+
+.process__button {
+  width: 190px;
+  white-space: nowrap;
+  height: 50px;
+  margin-left: 5px;
+  padding: 12px 25px; /*хз откуда вылезла граница 1.6,из-за нее пришлось подгонять паддинги*/
 }
 
 @media (min-width: @tablet-width) {
+  .process {
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+
   .process__header {
     height: 90px;
     order: 2;
+    padding-top: 15px;
+    padding-left: 17px;
+  }
+
+  .process__title {
+    margin: 0;
+    padding: 0;
+    padding-top: 23px;
+    padding-left: 89px;
+    .font-param (20px, 24px, "Open Sans Bold", @dark-font);
+  }
+
+  .process__title::before {
+    top: 33px;
+    left: 40px;
   }
 
   .process__video {
-    height: 458px;
+    padding: 0;
+    min-height: 455px;
+    margin: 0;
     order: 1;
+    background-image: url("../img/video-tablet@1x.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 668px 455px;
   }
 
   .process__order {
     height: 200px;
+    margin: 0;
+    padding: 0;
     order: 3;
+  }
+
+  .process__description {
+    .font-param (15px, 30px, "Open Sans", @lighter-font);
+    padding-left: 40px;
+    padding-top: 5px;
+    padding-right: 40px;
+    margin-bottom: 36px;
+  }
+
+  .process__button {
+    width: 584px;
+    padding-top: 15px;
+    margin-left: 40px;
   }
 }
 
@@ -53,6 +129,7 @@
   .process {
     height: 455px;
     flex-wrap: wrap;
+    margin-top: 4px;
   }
 
   .process__header {
@@ -61,15 +138,44 @@
     order: 2;
   }
 
+  .process__title {
+    padding-top: 83px;
+    padding-left: 60px;
+    padding-right: 70px;
+  }
+
+  .process__title::before {
+    top: 44px;
+    left: 80px;
+  }
+
   .process__video {
-    width: 683px;
+    width: 682px;
     height: 455px;
     order: 1;
+    background-image: url("../img/video-desktop@1x.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 682px 455px;
+  }
+
+  .process__description {
+    padding-top: 25px;
+    padding-left: 77px;
+    padding-right: 0;
+    margin: 0;
   }
 
   .process__order {
     width: 368px;
     height: 300px;
     order: 3;
+  }
+
+  .process__button {
+    width: 231px;
+    margin: 0;
+    margin-top: 45px;
+    margin-left: 77px;
   }
 }

@@ -4,21 +4,118 @@
   flex-direction: column;
 }
 
+.type-container__legend {
+  padding-top: 22px;
+}
+
 .type-container__options {
   display: flex;
   flex-direction: column;
+  margin-top: 34px;
+  padding-left: 62px;
+}
+
+.type-container__input {
+  display: none;
+}
+
+.type-container__label {
+  margin-bottom: 25px;
+  position: relative;
+}
+
+.type-container__input + .type-container__label::before {
+  content: "";
+  position: absolute;
+  top: -9px;
+  left: -63px;
+
+  display: inline-block;
+  width: 41px;
+  height: 41px;
+  border: 2px solid @dark-font;
+  border-radius: 50%;
+  vertical-align: baseline;
+}
+
+.type-container__input:checked + .type-container__label::after {
+  content: "";
+  position: absolute;
+  display: inline-block;
+  vertical-align: baseline;
+  top: 3px;
+  left: -50px;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background-color: @aquamarine;
 }
 
 @media (min-width: @tablet-width) {
   .type-container {
     height: 193px;
     flex-direction: row;
+    margin-left: 50px;
+  }
+
+  .type-container__legend {
+    padding-top: 73px;
+  }
+
+  .type-container__options {
+    width: 100%;
+    padding-left: 180px;
+  }
+
+  .type-container__label {
+    padding-left: 32px;
+    padding-top: 37px;
+    padding-bottom: 21px;
+    margin-bottom: 0;
+  }
+
+  .type-container__input + .type-container__label::before {
+    content: "";
+    position: absolute;
+    top: 22px;
+    left: -50px;
+
+    display: inline-block;
+    width: 53px;
+    height: 53px;
+    border: 2px solid @dark-font;
+    border-radius: 50%;
+    vertical-align: baseline;
+  }
+
+  .type-container__input:checked + .type-container__label::after {
+    content: "";
+    position: absolute;
+    display: inline-block;
+    vertical-align: baseline;
+    top: 38px;
+    left: -33px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: @aquamarine;
   }
 }
 
 @media (min-width: @desktop-width) {
   .type-container {
-    height: 202px;
-    flex-direction: column;
+    height: 190px;
+    flex-direction: rpw;
+  }
+
+  .type-container__legend {
+    padding-top: 74px;
+    padding-left: 64px;
+  }
+
+  .type-container__options {
+    width: 100%;
+    padding-left: 124px;
+    padding-top: 1px;
   }
 }

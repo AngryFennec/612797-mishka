@@ -1,12 +1,37 @@
 .write-us {
-  min-height: 134px;
-  outline: 2px solid blue;
-  margin-left: 30px;
-  margin-right: 30px;
+  margin: 0 auto;
+  padding-top: 40px;
+  padding-bottom: 39px;
+  width: 260px;
+}
+
+.write-us__button {
+  width: 260px;
+  padding-top: 13px;
+  .font-param(18px, 20px, "Open Sans Bold", @lighter-font);
+}
+
+@media (min-width: @tablet-width) {
+  .write-us__button {
+    margin: 0 auto;
+    width: 230px;
+    margin-top: 18px;
+    .font-param(17px, 20px, "Open Sans Bold", @lighter-font);
+  }
+
+  .write-us {
+    width: 668px;
+  }
 }
 
 @media (min-width: @desktop-width) {
   .write-us {
     order: 2;
+    width: 525px;
+  }
+
+  .write-us__button {
+    margin-top: 25px;
+    margin-left: 196px;
   }
 }

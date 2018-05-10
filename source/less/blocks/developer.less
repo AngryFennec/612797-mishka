@@ -2,21 +2,30 @@
   height: 80px;
   padding-left: 30px;
   padding-right: 30px;
-  margin: 0;
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: flex-start;
 }
 
 .developer__text {
-
   .font-param(19px, 18px, "Open Sans Bold", @dark-font);
+  margin-left: 36px;
+}
+
+.developer__logo {
+  margin-left: 30px;
 }
 
 @media (min-width: @tablet-width) {
   .developer {
     width: 186px;
     padding: 0;
+    margin-left: 41px;
+    margin-right: 83px;
+  }
+
+  .developer__logo {
+    padding-top: 10px;
   }
 }
 
@@ -24,14 +33,7 @@
   .developer {
     width: 177px;
     padding: 0;
+    margin-left: 231px;
+    margin-right: 92px;
   }
 }
-/*
-.developer__link {
-
-}
-
-.developer__logo {
-
-}
-*/

@@ -1,16 +1,50 @@
 .params {
   .font-param(15px, 24px, "Open Sans", @lighter-font);
-}
-
-/*.params__row {
-
+  margin-top: 21px;
+  margin-left: -2px;
+  border-collapse: collapse;
 }
 
 .params__title {
-
+  width: 80px;
+  outline: none;
+  padding-bottom: 4px;
 }
 
 .params__value {
-
+  width: 180px;
+  outline: none;
+  padding-bottom: 4px;
+  padding-left: 19px;
 }
-*/
+
+.params__row {
+  height: 38px;
+  border-bottom: 1px solid @lighter-font;
+  outline: none;
+}
+
+@media (min-width: @tablet-width) {
+  .params {
+    .font-param(15px, 20px, "Open Sans", @lighter-font);
+    width: 315px;
+    margin-top: 35px;
+  }
+
+  .params__title {
+    padding: 0;
+    padding-left: 22px;
+  }
+
+  .params__value {
+    padding: 0;
+    padding-left: 13px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .params {
+    margin-left: 173px;
+    margin-top: 49px;
+  }
+}
