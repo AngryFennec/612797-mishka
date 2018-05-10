@@ -5,42 +5,93 @@
     <title>HTML Academy: Мишка</title>
     <link href="./css/style.css" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Pixel Glass
+    <style>
+      HTML {
+        background-repeat: no-repeat;
+        background-position:  50% 0;
+        /* По умолчанию мобильный макет */
+        background-image: url( "img/mishka-index-mobile-menu.png" );
+      }
+      /* Планшет */
+      @media ( min-width: 768px ) {
+        HTML {
+        /* Планшетный макет */
+          background-image: url( "img/mishka-index-tablet.jpg" );
+        }
+      }
+      /* Десктоп */
+      @media ( min-width: 1150px ) {
+        HTML {
+        /* Десктопный макет */
+          background-image: url( "img/mishka-index-desktop.jpg" );
+        }
+      }
+      BODY {
+        opacity: .5;
+      }
+    </style>
+    <link rel="stylesheet" href="../node_modules/pixel-glass/styles.css">
+    <script src="../node_modules/pixel-glass/script.js"></script>-->
+    <!-- // Pixel Glass -->
   </head>
-  <body class="body-index stabber">
+  <body class="body-index">
     <header class="page-header">
-      <h1 class="page-header__title visually-hidden">MISHKA</h1>
-      <img class="page-header__logo" src="./img/logo-mobile.svg" width="86" height="35" alt="Логотип">
       <nav class="page-navigation">
-          <a class="page-navigation__open" href=#>Меню</a>
-          <ul class="page-menu">
-            <li class="page-menu__item"><a href="catalog.html">Каталог товаров</a></li>
-            <li class="page-menu__item"><a href="form.html">Вязание на заказ</a></li>
-            <li class="page-menu__item">Поиск по сайту</li>
-            <li class="page-menu__item">Корзина: пока пуста</li>
-          </ul>
+        <h1 class="page-header__title visually-hidden">MISHKA</h1>
+        <picture class="page-header__logo">
+          <source media="(min-width: 1150px)" srcset="img/logo-desktop.svg">
+          <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+          <img src="./img/logo-mobile.svg" width="86" height="35" alt="Логотип">
+        </picture>
+        <button class="page-navigation__button menu-button" href=#><span class="menu-button__text">Меню</span></button>
+        <ul class="page-menu">
+          <li class="page-menu__item"><a href="catalog.html">Каталог товаров</a></li>
+          <li class="page-menu__item"><a href="form.html">Вязание на заказ</a></li>
+        </ul>
+        <ul class="page-user-menu">
+          <li class="page-user-menu__item">
+            <svg class="page-user-menu__item-icon" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="17.6px" height="17.6px" viewBox="-0.8 -0.8 17.6 17.6" enable-background="new -0.8 -0.8 17.6 17.6" xml:space="preserve">
+              <path fill="#231F20" d="M16.47,14.93l-3.415-3.415C14.02,10.226,14.6,8.634,14.6,6.899c0-4.253-3.447-7.699-7.7-7.699 S-0.8,2.646-0.8,6.899s3.446,7.7,7.699,7.7c1.734,0,3.326-0.58,4.613-1.546l3.417,3.416c0.203,0.202,0.418,0.33,0.771,0.33 c0.607,0,1.1-0.492,1.1-1.1C16.8,15.459,16.739,15.2,16.47,14.93z M1.399,6.899c0-3.038,2.462-5.5,5.5-5.5s5.5,2.462,5.5,5.5 s-2.462,5.5-5.5,5.5S1.399,9.938,1.399,6.899z"/>
+            </svg>
+            <span class="page-user-menu__item-text">Поиск по сайту</span>
+          </li>
+          <li class="page-user-menu__item">
+            <svg class="page-user-menu__item-icon" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="20.294px" height="18.849px" viewBox="264.205 370.961 20.294 18.849" enable-background="new 264.205 370.961 20.294 18.849" xml:space="preserve">
+              <path fill="#231F20" d="M283.75,378.19h-3.151l-3.407-6.814c-0.185-0.37-0.634-0.52-1.006-0.335 c-0.371,0.186-0.521,0.636-0.335,1.006l3.071,6.143h-9.138l3.072-6.143c0.185-0.371,0.035-0.821-0.335-1.006 c-0.37-0.185-0.821-0.035-1.006,0.335l-3.407,6.814h-3.151c-0.414,0-0.75,0.336-0.75,0.75s0.336,0.75,0.75,0.75h0.157l0.855,2.991 c-0.187,0.137-0.316,0.347-0.316,0.595c0,0.396,0.309,0.71,0.697,0.739l1.656,5.795h12.697l1.656-5.795 c0.388-0.028,0.698-0.344,0.698-0.739c0-0.249-0.129-0.459-0.316-0.596l0.854-2.991h0.157c0.414,0,0.75-0.336,0.75-0.75 S284.164,378.19,283.75,378.19z M279.569,388.311h-10.433l-1.224-4.284h12.881L279.569,388.311z M281.222,382.526h-13.739 l-0.81-2.836h15.359L281.222,382.526z"/>
+            </svg>
+            <span class="page-user-menu__item-text">Корзина: пока пуста</span>
+          </li>
+        </ul>
+        <p class="page-navigation__new">Новые поступления</p>
+        <p class="page-navigation__sale">Распродажа</p>
+        <p class="page-navigation__delivery">Бесплатная доставка по России</p>
       </nav>
     </header>
-    <main class="index-main">
+    <main>
       <article class="head">
-        <div class="header-block index-main__header">
-          <h1 class="head__title">Милые штуки ручной работы для дома</h1>
+        <div class=nomargin-stabber>
+        <div class="head__block">
+          <h1 class="head__title">Милые штуки ручной<br> работы для дома</h1>
         </div>
         <ul class="head__list">
           <li class="head__list-item">Предметы интерьера</li>
           <li class="head__list-item">Детские игрушки</li>
         </ul>
+      </div>
       </article>
+      <div  class="nomargin-stabber">
       <article class="promo">
         <div class="promo__head">
           <h2 class="promo__title">Вязаные корзинки</h2>
           <p class="promo__week">Товар недели</p>
         </div>
         <div class="promo__content">
-          <p class="promo__description">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках и трех размерах.</p>
+          <p class="promo__description">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.</p>
           <table class="params">
             <tr class="params__row">
               <td class="params__title">Цвет:</td>
-              <td class="params__value">"Тиффани"/серый</td>
+              <td class="params__value">«Тиффани»/серый</td>
             </tr>
             <tr class="params__row">
               <td class="params__title">Диаметр:</td>
@@ -51,7 +102,11 @@
               <td class="params__value">15 см</td>
             </tr>
           </table>
-          <img class="promo__photo"  src="./img/triple-set-mobile@1x.jpg" width="260" height="315" alt="Фото корзинок">
+          <picture class="promo__photo">
+            <source media="(min-width: 1150px)" srcset="img/triple-set-desktop@1x.jpg">
+            <source media="(min-width: 768px)" srcset="img/triple-set-tablet@1x.jpg">
+            <img src="./img/triple-set-mobile@1x.jpg" width="260" height="315" alt="Фото корзинок">
+          </picture>
           <p class="promo__price">Цена: 990 руб.</p>
           <a class="promo__button button" href=#>Заказать</a>
         </div>
@@ -70,36 +125,51 @@
       <section class="messages">
         <div class="messages__container">
           <h2 class="messages__title">Отзывы</h2>
-          <p class="messages__text">Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!</p>
+          <p class="messages__text">Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и&nbsp;мои фотографии сразу стали более стильными, а также набирают больше лайков!</p>
           <div class="messages__who-where">
-            <b class="messages__author">Анастасия Красильникова</b>
-            <p class="messages__nickname">@misssssiskras</p>
+            <div class="messages__who">
+              <b class="messages__author">Анастасия Красильникова</b>
+              <p class="messages__nickname">@misssssiskras</p>
+            </div>
             <div class="message-navigation">
-              <a class="message-navigation__left" href=#>Влево</a>
-              <a class="message-navigation__right" href=#>Вправо</a>
+              <a class="message-navigation__left" href=#><span class="visually-hidden">Влево</span></a>
+              <a class="message-navigation__right" href=#><span class="visually-hidden">Вправо</span></a>
             </div>
           </div>
           <a class="messages__button  button" href=#>Написать</a>
         </div>
       </section>
+      </div>
       <article class="about-us">
         <section class="contacts">
           <b class="contacts__title">Контакты</b>
-          <p class="contacts__email-label">e-mail:</p>
-          <a class="contacts__email-adress" href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a>
-          <p class="contacts__adress-label">адрес:</p>
-          <p class="contacts__adress">г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101</p>
+          <div class="contacts__text-block">
+            <div class="contacts__email-block">
+              <p class="contacts__email-label">e-mail:</p>
+              <a class="contacts__email-adress" href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a>
+            </div>
+            <div class="contacts__adress-block">
+              <p class="contacts__adress-label">адрес:</p>
+              <p class="contacts__adress">г. Санкт-Петербург, <br>ул. Большая Конюшенная,<br> д. 19/8, офис 101</p>
+            </div>
+          </div>
         </section>
         <section class="map">
-          <img  src="./img/map-mobile@1x.jpg" width="320" height="458" alt="Карта">
+          <picture class="map__photo">
+            <source media="(min-width: 1150px)" srcset="./img/map-desktop@1x.jpg">
+            <source media="(min-width: 768px)" srcset="./img/map-tablet@1x.jpg">
+            <img  src="./img/map-mobile@1x.jpg" width="320" height="458" alt="Карта">
+          </picture>
         </section>
         <section class="write-us">
           <a class="write-us__button  button" href=#>Напишите нам</a>
         </section>
       </article>
-      <footer class="page-footer">
+    </main>
+    <footer class="page-footer">
+      <div class="page-footer__stabber">
         <div class="footer-logo">
-          <img src="./img/logo-mobile.svg" width="86" height="35" alt="Логотип">
+          <img src="./img/logo-mobile.svg" width="102" height="34" alt="Логотип">
         </div>
         <div class="social">
           <ul class="social-list">
@@ -126,20 +196,22 @@
             <img class="developer__logo" src="./img/logo-htmlacademy.svg" width="27" height="34" alt="Лого академии">
           </a>
         </div>
-      </footer>
-      <section class="modal-add">
+      </div>
+    </footer>
+    <section class="modal-add">
+      <form class="modal-add__form" method="post" action="https://echo.htmlacademy.ru">
         <h2 class="modal-add__title">Добавить в корзину</h2>
         <p class="modal-add__description">Выберите размер:</p>
-        <form class="modal-add__form" method="post" action="https://echo.htmlacademy.ru">
+        <div class="modal-add__container">
           <input class="modal-add__input" type="radio" name="size" id="size-s">
           <label class="modal-add__label" for="size-s">S</label>
           <input class="modal-add__input" type="radio" name="size" id="size-m">
           <label class="modal-add__label" for="size-m">M</label>
           <input class="modal-add__input" type="radio" name="size" id="size-l">
           <label class="modal-add__label" for="size-l">L</label>
-          <input class="modal-add__button  button" type="submit" id="modal-submit" value="Добавить">
-        </form>
-      </section>
-    </main>
+        </div>
+        <input class="modal-add__button  button" type="submit" id="modal-submit" value="Добавить">
+      </form>
+    </section>
   </body>
 </html>
