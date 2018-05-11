@@ -59,6 +59,10 @@
     background-repeat: no-repeat;
     background-position: 0% 10%;
     position: relative;
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url("../img/review@2x.jpg");
+    }
   }
 
   .messages__who-where {

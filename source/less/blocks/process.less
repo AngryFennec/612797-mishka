@@ -42,6 +42,11 @@
   background-repeat: no-repeat;
   background-position: center center;
   background-size: 260px auto;
+
+  @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+    background-image: url("../img/video-mobile@2x.jpg");
+    background-size: 260px auto;
+  }
 }
 
 .process__order {
@@ -64,8 +69,18 @@
   white-space: nowrap;
   height: 52px;
   margin-left: 5px;
-  padding: 12px 25px; /*хз откуда вылезла граница 1.6,из-за нее пришлось подгонять паддинги*/
+  padding: 12px 25px;
   padding-top: 16px;
+}
+
+.process__play {
+  width: 115px;
+  height: 82px;
+  margin-top: 40px;
+  margin-left: 80px;
+  background-color: transparent;
+  border: none;
+  outline: none;
 }
 
 @media (min-width: @tablet-width) {
@@ -103,6 +118,16 @@
     background-repeat: no-repeat;
     background-position: center center;
     background-size: 668px 455px;
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url("../img/video-tablet@2x.jpg");
+      background-size: 668px auto;
+    }
+  }
+
+  .process__play {
+    margin-top: 200px;
+    margin-left: 270px;
   }
 
   .process__order {
@@ -159,6 +184,11 @@
     background-repeat: no-repeat;
     background-position: center center;
     background-size: 682px 455px;
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url("../img/video-desktop@2x.jpg");
+      background-size: 682px auto;
+    }
   }
 
   .process__description {
