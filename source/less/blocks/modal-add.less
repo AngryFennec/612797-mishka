@@ -1,29 +1,111 @@
 .modal-add {
+  position: fixed;
+  top: 0;
+  z-index: 15;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+.modal-add__form {
+  width: 320px;
   height: 338px;
-  display: none;
+  display: flex;
+  flex-direction: column;
+  background-color: @white-font;
+  border: 1px solid  @border-gray;
+  box-shadow: 0 5px 10px 0  @border-gray;
+  position: absolute;
+  top: 50%;
+  left: 50%;
 }
 
 .modal-add__title {
+  width: 150px;
+  margin: 0;
+  padding-top: 31px;
+  padding-left: 88px;
+  text-transform: uppercase;
   .font-param (25px, 30px, "Open Sans Bold", @dark-font);
+  text-align: center;
 }
 
 .modal-add__description {
+  margin: 0;
+  padding-top: 11px;
+  padding-bottom: 24px;
+  padding-left: 93px;
   .font-param (15px, 30px, "Open Sans", @lightest-font);
-}
-/*
-.modal-add__form {
-
 }
 
 .modal-add__input {
-
+  display: none;
 }
-*/
+
+.modal-add__container {
+  display: flex;
+  justify-content: space-between;
+  width: 260px;
+  margin: 0 auto;
+}
+
 .modal-add__label {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 78px;
+  height: 48px;
   .font-param (17px, 16px, "Open Sans Bold", @lightest-font);
+  border: 2px solid @border-gray;
 }
-/*
-.modal-add__button {
 
+.modal-add__input:checked + .modal-add__label {
+  border-color: #63d1bb;
 }
-*/
+
+.modal-add__button {
+  width: 260px;
+  height: 52px;
+  margin-top: 31px;
+  margin-left: 31px;
+  .font-param (17px, 16px, "Open Sans Bold", @white-font);
+  background-color: @aqua-dark;
+  border: none;
+}
+
+@media (min-width: 768px) {
+  .modal-add__form {
+    width: 564px;
+    height: 350px;
+    border: 1px solid @border-gray;
+    top: 50%;
+    left: 50%;
+  }
+
+  .modal-add__label {
+    width: 108px;
+  }
+
+  .modal-add__container {
+    width: 350px;
+  }
+
+  .modal-add__button {
+    width: 350px;
+    margin: 0 auto;
+    margin-top: 31px;
+  }
+
+  .modal-add__title {
+    width: 355px;
+    padding-left: 108px;
+    .font-param (30px, 57px, "Open Sans Bold", @dark-font);
+  }
+
+  .modal-window__description {
+    padding-top: 15px;
+    padding-bottom: 21px;
+    padding-left: 207px;
+    .font-param (17px, 30px, "Open Sans", @lightest-font);
+  }
+}

@@ -1,6 +1,6 @@
 .process {
   min-height: 503px;
-  margin-bottom: 50px;
+  margin-bottom: 56px;
   display: flex;
   flex-direction: column;
   flex-wrap: no-wrap;
@@ -11,7 +11,7 @@
 
 .process__header {
   margin: 0;
-  height: 97px;
+  height: 92px;
   position: relative;
 }
 
@@ -20,7 +20,7 @@
   .font-param (17px, 24px, "Open Sans Bold", @dark-font);
   padding-left: 89px;
   padding-right: 41px;
-  padding-top: 22px;
+  padding-top: 21px;
   padding-bottom: 21px;
 }
 
@@ -42,6 +42,11 @@
   background-repeat: no-repeat;
   background-position: center center;
   background-size: 260px auto;
+
+  @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+    background-image: url("../img/video-mobile@2x.jpg");
+    background-size: 260px auto;
+  }
 }
 
 .process__order {
@@ -56,20 +61,34 @@
   .font-param (13px, 24px, "Open Sans", @lighter-font);
   margin-bottom: 24px;
   padding-left: 5px;
+  padding-top: 4px;
 }
 
 .process__button {
-  width: 190px;
+  width: 192px;
   white-space: nowrap;
-  height: 50px;
+  height: 52px;
   margin-left: 5px;
-  padding: 12px 25px; /*хз откуда вылезла граница 1.6,из-за нее пришлось подгонять паддинги*/
+  padding: 12px 25px;
+  padding-top: 16px;
+}
+
+.process__play {
+  width: 115px;
+  height: 82px;
+  margin-top: 36px;
+  margin-left: 71px;
+  background-color: transparent;
+  border: none;
+  outline: none;
 }
 
 @media (min-width: @tablet-width) {
   .process {
+    min-height: 505px;
     margin-left: 50px;
     margin-right: 50px;
+    margin-bottom: 60px;
   }
 
   .process__header {
@@ -82,8 +101,8 @@
   .process__title {
     margin: 0;
     padding: 0;
-    padding-top: 23px;
-    padding-left: 89px;
+    padding-top: 22px;
+    padding-left: 88px;
     .font-param (20px, 24px, "Open Sans Bold", @dark-font);
   }
 
@@ -101,10 +120,20 @@
     background-repeat: no-repeat;
     background-position: center center;
     background-size: 668px 455px;
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url("../img/video-tablet@2x.jpg");
+      background-size: 668px auto;
+    }
+  }
+
+  .process__play {
+    margin-top: 187px;
+    margin-left: 275px;
   }
 
   .process__order {
-    height: 200px;
+    height: 198px;
     margin: 0;
     padding: 0;
     order: 3;
@@ -115,21 +144,24 @@
     padding-left: 40px;
     padding-top: 5px;
     padding-right: 40px;
-    margin-bottom: 36px;
+    margin-bottom: 35px;
   }
 
   .process__button {
     width: 584px;
-    padding-top: 15px;
+    padding-top: 17px;
     margin-left: 40px;
+    height: 52px;
+    margin-bottom: 0;
   }
 }
 
 @media (min-width: @desktop-width) {
   .process {
-    height: 455px;
+    height: 470px;
     flex-wrap: wrap;
     margin-top: 4px;
+    margin-bottom: 56px;
   }
 
   .process__header {
@@ -139,7 +171,7 @@
   }
 
   .process__title {
-    padding-top: 83px;
+    padding-top: 82px;
     padding-left: 60px;
     padding-right: 70px;
   }
@@ -157,6 +189,11 @@
     background-repeat: no-repeat;
     background-position: center center;
     background-size: 682px 455px;
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url("../img/video-desktop@2x.jpg");
+      background-size: 682px auto;
+    }
   }
 
   .process__description {
@@ -175,7 +212,12 @@
   .process__button {
     width: 231px;
     margin: 0;
-    margin-top: 45px;
+    margin-top: 43px;
     margin-left: 77px;
+  }
+
+  .process__play {
+    margin-top: 187px;
+    margin-left: 283px;
   }
 }

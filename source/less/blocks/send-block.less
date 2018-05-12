@@ -2,17 +2,18 @@
   display: flex;
   flex-direction: column;
   padding-bottom: 53px;
-  padding-top: 22px;
+  margin-top: 0;
 }
 
 .send-block__required {
   .font-param(14px, 16px, "Open Sans", @lighter-font);
-  padding-top: 15px;
+  padding-top: 2px;
 }
 
 .send-block__btn {
-  margin-top: 17px;
+  margin-top: 18px;
   width: 260px;
+  height: 52px;
 }
 
 @media (min-width: @tablet-width) {
@@ -20,7 +21,7 @@
     height: 139px;
     flex-direction: row;
     justify-content: flex-start;
-    padding-bottom: 45px;
+    padding-bottom: 0;
     margin: 0;
     padding-top: 0;
   }
@@ -29,33 +30,34 @@
     order: 5;
     margin-left: 100px;
     .font-param(17px, 30px, "Open Sans", @lighter-font);
-    padding-top: 39px;
+    padding-top: 30px;
     padding-left: 37px;
   }
 
   .send-block__btn {
     margin-left: 50px;
     width: 229px;
-    margin-top: 48px;
+    margin-top: 38px;
     .font-param(17px, 16px, "Open Sans Bold", @dark-font);
   }
 }
 
 @media (min-width: @desktop-width) {
   .send-block {
-    height: 138px;
+    height: 145px;
     flex-direction: row;
   }
 
   .send-block__required {
     order: 5;
     margin-left: 132px;
+    padding-top: 37px;
   }
 
   .send-block__btn {
     margin-left: 226px;
     width: 229px;
-    margin-top: 49px;
+    margin-top: 45px;
     .font-param(17px, 16px, "Open Sans Bold", @dark-font);
   }
 }
