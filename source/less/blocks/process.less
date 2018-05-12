@@ -1,6 +1,6 @@
 .process {
   min-height: 503px;
-  margin-bottom: 50px;
+  margin-bottom: 56px;
   display: flex;
   flex-direction: column;
   flex-wrap: no-wrap;
@@ -76,8 +76,8 @@
 .process__play {
   width: 115px;
   height: 82px;
-  margin-top: 40px;
-  margin-left: 80px;
+  margin-top: 36px;
+  margin-left: 71px;
   background-color: transparent;
   border: none;
   outline: none;
@@ -85,8 +85,10 @@
 
 @media (min-width: @tablet-width) {
   .process {
+    min-height: 505px;
     margin-left: 50px;
     margin-right: 50px;
+    margin-bottom: 60px;
   }
 
   .process__header {
@@ -99,7 +101,7 @@
   .process__title {
     margin: 0;
     padding: 0;
-    padding-top: 23px;
+    padding-top: 22px;
     padding-left: 88px;
     .font-param (20px, 24px, "Open Sans Bold", @dark-font);
   }
@@ -126,12 +128,12 @@
   }
 
   .process__play {
-    margin-top: 200px;
-    margin-left: 270px;
+    margin-top: 187px;
+    margin-left: 275px;
   }
 
   .process__order {
-    height: 200px;
+    height: 198px;
     margin: 0;
     padding: 0;
     order: 3;
@@ -142,21 +144,24 @@
     padding-left: 40px;
     padding-top: 5px;
     padding-right: 40px;
-    margin-bottom: 34px;
+    margin-bottom: 35px;
   }
 
   .process__button {
     width: 584px;
-    padding-top: 15px;
+    padding-top: 17px;
     margin-left: 40px;
+    height: 52px;
+    margin-bottom: 0;
   }
 }
 
 @media (min-width: @desktop-width) {
   .process {
-    height: 455px;
+    height: 470px;
     flex-wrap: wrap;
     margin-top: 4px;
+    margin-bottom: 56px;
   }
 
   .process__header {
@@ -209,5 +214,10 @@
     margin: 0;
     margin-top: 43px;
     margin-left: 77px;
+  }
+
+  .process__play {
+    margin-top: 187px;
+    margin-left: 283px;
   }
 }

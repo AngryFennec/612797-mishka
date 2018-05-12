@@ -8,8 +8,8 @@
 .features__title {
   .font-param (25px, 30px, "Open Sans Bold", @dark-font);
   margin: 0;
-  padding-top: 33px;
-  padding-left: 27px;
+  padding-top: 30px;
+  padding-left: 28px;
 }
 
 .features__list {
@@ -46,7 +46,7 @@
   }
 
   &:nth-child(2) {
-    margin-top: 86px;
+    margin-top: 83px;
     padding-right: 60px;
 
     &::before {
@@ -54,13 +54,13 @@
       height: 27px;
       background-image: url("../img/icon-feature-money.svg");
       background-size: 47px 27px;
-      top: -54px;
+      top: -53px;
       left: 0;
     }
   }
 
   &:nth-child(3) {
-    margin-top: 85px;
+    margin-top: 82px;
     padding-right: 80px;
 
     &::before {
@@ -68,13 +68,13 @@
       height: 27px;
       background-image: url("../img/icon-feature-heart.svg");
       background-size: 34px 27px;
-      top: -49px;
+      top: -47px;
       left: 7px;
     }
   }
 
   &:nth-child(4) {
-    margin-top: 85px;
+    margin-top: 84px;
     padding-right: 40px;
 
     &::before {
@@ -82,26 +82,26 @@
       height: 34px;
       background-image: url("../img/icon-feature-ball.svg");
       background-size: 35px 34px;
-      top: -52px;
+      top: -51px;
       left: 3px;
     }
   }
 
   &:nth-child(5) {
-    margin-top: 84px;
+    margin-top: 82px;
 
     &::before {
       width: 55px;
       height: 23px;
       background-image: url("../img/icon-feature-rocket.svg");
       background-size: 55px 23px;
-      top: -50px;
+      top: -48px;
       left: -5px;
     }
   }
 
   &:nth-child(6) {
-    margin-top: 85px;
+    margin-top: 84px;
     padding-right: 40px;
 
     &::before {
@@ -109,7 +109,7 @@
       height: 32px;
       background-image: url("../img/icon-feature-gift.svg");
       background-size: 33px 32px;
-      top: -53px;
+      top: -52px;
       left: 3px;
     }
   }
@@ -118,13 +118,13 @@
 .features::before {
   content: "";
   position: absolute;
-  width: 100%;
+  width: 320px;
   height: 6px;
   background-image: url("../img/bg-zigzag-line.svg");
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 100% 6px;
-  top: -2px;
+  background-size: 320px 6px;
+  top: -3px;
   left: 0;
 }
 
@@ -141,21 +141,19 @@
 
   .features__title {
     .font-param (43px, 50px, "Open Sans Bold", @dark-font);
-    padding-top: 60px;
+    padding-top: 64px;
     padding-left: 45px;
   }
 
   .features::before {
     content: "";
     position: absolute;
-    width: 772px;
-    height: 17px;
+    width: 100%;
+    height: 20px;
     background-image: url("../img/bg-zigzag-line.svg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 768px 17px;
-    top: -4px;
-    left: -25px;
+    background-repeat: repeat-x;
+    background-position: 20px 100%;
+    background-size: 768px 20px;
   }
 
   .features__list-item {
@@ -173,7 +171,7 @@
     }
 
     &:nth-child(2) {
-      margin-top: 112px;
+      margin-top: 111px;
       padding-right: 60px;
       padding-left: 20px;
 
@@ -205,7 +203,7 @@
     }
 
     &:nth-child(5) {
-      margin-top: 110px;
+      margin-top: 111px;
 
       &::before {
         top: -50px;
@@ -227,7 +225,7 @@
 
 @media (min-width: @desktop-width) {
   .features {
-    height: 650px;
+    height: 652px;
   }
 
   .features__list {
@@ -241,20 +239,19 @@
     .font-param (53px, 57px, "Open Sans Bold", @dark-font);
     margin: 0;
     padding: 0;
-    padding-top: 48px;
+    padding-top: 49px;
     padding-left: 220px;
   }
 
   .features::before {
     content: "";
     position: absolute;
-    width: 1150px;
-    height: 23px;
+    width: 100%;
+    height: 21px;
     background-image: url("../img/bg-zigzag-line.svg");
     background-repeat: repeat-x;
-    background-position: center;
-    background-size: 1050px 23px;
+    background-position: 27px 100%;
+    background-size: auto 21px;
     top: -30px;
-    left: 25px;
   }
 }
