@@ -51,6 +51,7 @@
     "node": "8.11"
   },
   "dependencies": {
-    "npm": "^6.0.0"
+    "npm": "^6.0.0",
+    "picturefill": "^3.0.2"
   }
 }
