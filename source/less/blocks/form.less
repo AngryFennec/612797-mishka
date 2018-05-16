@@ -17,7 +17,21 @@
 }
 
 .form__input {
-  .font-param (17px, 18px, "Open Sans", @light-gray);
+  .font-param (17px, 18px, "Open Sans", @lighter-font);
+
+  &::placeholder {
+    color: @light-gray;
+  }
+
+  &:hover,
+  &:focus {
+    border-bottom-color: @aquamarine;
+  }
+
+  &:active {
+    color: @lighter-font;
+    border-bottom-color: @aquamarine;
+  }
 }
 
 .form__label {
@@ -39,7 +53,7 @@
   }
 
   .form__input {
-    .font-param (19px, 18px, "Open Sans", @light-gray);
+    .font-param (19px, 18px, "Open Sans", @lighter-font);
   }
 
   .form {

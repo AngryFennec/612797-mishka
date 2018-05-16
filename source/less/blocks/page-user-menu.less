@@ -16,6 +16,20 @@
   .font-param (17px, 24px, "Open Sans Bold", @lighter-font);
   margin: 0 auto;
   border-top: 1px solid @gray-back;
+
+  &:hover,
+  &:focus {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.page-user-menu__item:hover .page-user-menu__item-icon,
+.page-user-menu__item:focus .page-user-menu__item-icon, {
+  fill: @aqua-dark;
 }
 
 .page-user-menu__item-icon {
@@ -25,6 +39,7 @@
 
 .page-user-menu__item-text {
   margin-left: 26px;
+  .font-param (17px, 24px, "Open Sans Bold", @lighter-font);
 }
 
 .page-user-menu__item:nth-child(2) .page-user-menu__item-icon {
@@ -41,9 +56,8 @@
   .page-user-menu__item {
     white-space: nowrap;
     margin: 0;
-    padding-top: 30px;
+    padding-top: 26px;
     padding-bottom: 30px;
-
     .font-param (17px, 24px, "Open Sans Bold", @lighter-font);
   }
 
@@ -70,6 +84,7 @@
 
   .page-user-menu__item:nth-child(2) .page-user-menu__item-text {
     padding-left: 2px;
+    .font-param (17px, 24px, "Open Sans Bold", @lighter-font);
   }
 }
 
