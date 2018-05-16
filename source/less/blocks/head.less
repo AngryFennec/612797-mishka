@@ -100,6 +100,13 @@
 
   .head__list-link {
     .font-param(20px, 30px, "Open Sans Bold", @white-font);
+    min-height: 103px;
+    display:block;
+    width: 330px;
+
+    &:hover {
+      min-height: 108px;
+    }
   }
 
   .head__block {
@@ -133,6 +140,11 @@
 
     &:last-child {
       background-position: 87% 50%;
+    }
+
+    &:hover {
+      min-height: 108px;
+      padding-top: 23px;
     }
   }
 }

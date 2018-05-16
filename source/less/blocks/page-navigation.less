@@ -23,6 +23,14 @@
   right: 30px;
 }
 
+
+@media (max-width: 767px) {
+  .page-navigation--close .page-user-menu,
+  .page-navigation--close .page-menu, {
+    display: none;
+  }  
+}
+
 @media (min-width: @tablet-width) {
   .page-navigation {
     flex-direction: row;
@@ -47,6 +55,12 @@
   .page-navigation__sale {
     display: none;
   }
+
+  .page-navigation--close .page-user-menu,
+  .page-navigation--close .page-menu, {
+    display: flex;
+  }
+
 }
 
 @media (min-width: @desktop-width) {
@@ -82,6 +96,11 @@
     &:active {
       opacity: 0.3;
     }
+  }
+
+  .page-navigation--close .page-user-menu,
+  .page-navigation--close .page-menu, {
+    display: flex;
   }
 
   .page-navigation__delivery {

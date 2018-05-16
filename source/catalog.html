@@ -4,6 +4,8 @@
     <meta charset="utf-8">
     <title>HTML Academy: Мишка</title>
     <link href="./css/style.css" rel="stylesheet">
+    <link rel="preload" href="fonts/opensans.woff2" as="font">
+    <link rel="preload" href="fonts/opensansbold.woff2" as="font">
     <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
   <body class="body-catalog">
@@ -168,19 +170,21 @@
         </div>
       </div>
     </footer>
-    <!--
     <section class="modal-add">
-      <h2 class="modal-add__title">Добавить в корзину</h2>
-      <p class="modal-add__description">Выберите размер:</p>
       <form class="modal-add__form" method="post" action="https://echo.htmlacademy.ru">
-        <input class="modal-add__input" type="radio" name="size" id="size-s">
-        <label class="modal-add__label" for="size-s">S</label>
-        <input class="modal-add__input" type="radio" name="size" id="size-m">
-        <label class="modal-add__label" for="size-m">M</label>
-        <input class="modal-add__input" type="radio" name="size" id="size-l">
-        <label class="modal-add__label" for="size-l">L</label>
+        <h2 class="modal-add__title">Добавить в корзину</h2>
+        <p class="modal-add__description">Выберите размер:</p>
+        <div class="modal-add__container">
+          <input class="modal-add__input" type="radio" name="size" id="size-s" value="s">
+          <label class="modal-add__label" for="size-s">S</label>
+          <input class="modal-add__input" type="radio" name="size" id="size-m" checked value="m">
+          <label class="modal-add__label" for="size-m">M</label>
+          <input class="modal-add__input" type="radio" name="size" id="size-l" value="l">
+          <label class="modal-add__label" for="size-l">L</label>
+        </div>
         <input class="modal-add__button  button" type="submit" id="modal-submit" value="Добавить">
       </form>
-    </section>-->
+    </section>
+    <script src="js/script.js"></script>
   </body>
 </html>
