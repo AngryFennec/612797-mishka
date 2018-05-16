@@ -26,7 +26,9 @@
   border: none;
   border-bottom: 2px solid @dark-font;
   position: relative;
-  background: url("../img/icon-phone.svg") no-repeat 97% 50%;
+  background-image: url("../img/icon-phone.svg");
+  background-repeat: no-repeat;
+  background-position: 97% 50%;
 }
 
 .info-container__input-mail {
@@ -35,18 +37,24 @@
   padding-bottom: 18px;
   margin-left: -2px;
   border: none;
+  outline: none;
   border-bottom: 2px solid @dark-font;
   position: relative;
-  background: url("../img/icon-mail.svg") no-repeat 99% 62%;
+  background-image: url("../img/icon-mail.svg");
+  background-repeat: no-repeat;
+  background-position: 99% 62%;
 }
 
-.info-container__input-phone:hover .info-container__phone-icon,
-.info-container__input-phone:focus .info-container__phone-icon,
-.info-container__input-phone:active .info-container__phone-icon,
-.info-container__input-email:hover .info-container__mail-icon,
-.info-container__input-email:focus .info-container__mail-icon,
-.info-container__input-email:active .info-container__mail-icon {
-  fill: #62d1ba;
+.info-container__input-phone:hover,
+.info-container__input-phone:focus,
+.info-container__input-phone:active {
+  background-image: url("../img/icon-phone-hover.svg");
+}
+
+.info-container__input-mail:hover,
+.info-container__input-mail:focus,
+.info-container__input-mail:active {
+  background-image: url("../img/icon-mail-hover.svg");
 }
 
 /*

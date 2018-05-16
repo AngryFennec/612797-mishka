@@ -43,28 +43,45 @@
   .font-param(19px, 24px, "Open Sans Bold", @white-font);
 }
 
-.head__list-item {
+.head__list-item:first-child {
   min-height: 103px;
   padding-left: 29px;
   padding-right: 160px;
   padding-top: 25px;
   padding-bottom: 23px;
+  background-color: @aqua-dark;
+  background-image: url("../img/icon-interior.svg");
+  background-repeat: no-repeat;
+  background-position: 87% 50%;
+  background-size: 40px 62px;
 
-  &:first-child {
-    background-color: @aqua-dark;
-    background-image: url("../img/icon-interior.svg");
-    background-repeat: no-repeat;
-    background-position: 87% 50%;
-    background-size: 40px 62px;
+  &:hover,
+  &:active {
+    background-color: #59d5bc;
   }
+}
 
-  &:last-child {
-    background-color: @aqua-darkest;
-    background-image: url("../img/icon-toy.svg");
-    background-repeat: no-repeat;
-    background-position: 90% 50%;
-    background-size: 60px 60px;
+
+.head__list-item:last-child {
+  min-height: 103px;
+  padding-left: 29px;
+  padding-right: 160px;
+  padding-top: 25px;
+  padding-bottom: 23px;
+  background-color: @aqua-darkest;
+  background-image: url("../img/icon-toy.svg");
+  background-repeat: no-repeat;
+  background-position: 90% 50%;
+  background-size: 60px 60px;
+
+  &:hover,
+  &:active {
+    background-color: #46c1ae;
   }
+}
+
+.head__list-item:active .head__list-link {
+  opacity: 0.7;
 }
 
 @media (min-width: @tablet-width) {
@@ -101,12 +118,12 @@
   .head__list-link {
     .font-param(20px, 30px, "Open Sans Bold", @white-font);
     min-height: 103px;
+    width: 331px;
+    margin: 0;
     display: block;
-    width: 330px;
-
-    &:hover {
-      min-height: 108px;
-    }
+    padding-left: 34px;
+    padding-top: 28px;
+    padding-right: 120px;
   }
 
   .head__block {
@@ -130,21 +147,24 @@
   .head__list-item {
     padding: 0;
     width: 334px;
-    padding-top: 28px;
+    /*padding-top: 28px;
     padding-left: 34px;
-    padding-right: 120px;
+    padding-right: 120px;*/
+    min-height: 120px;
 
     &:first-child {
+      padding: 0;
       background-position: 87% 50%;
     }
 
     &:last-child {
+      padding: 0;
       background-position: 87% 50%;
     }
 
     &:hover {
-      min-height: 108px;
-      padding-top: 23px;
+      min-height: 125px;
+      margin-top: -5px;
     }
   }
 }
