@@ -27,14 +27,15 @@
   }
 }
 
-.page-user-menu__item:hover .page-user-menu__item-icon,
-.page-user-menu__item:focus .page-user-menu__item-icon, {
-  fill: @aqua-dark;
-}
-
 .page-user-menu__item-icon {
   margin-top: 5px;
   margin-left: -75px;
+  fill: #d3d2d2;
+}
+
+.page-user-menu__item:hover .page-user-menu__item-icon,
+.page-user-menu__item:focus .page-user-menu__item-icon, {
+  fill: @aqua-dark;
 }
 
 .page-user-menu__item-text {
@@ -67,6 +68,8 @@
 
   .page-user-menu__item:first-child {
     width: 102px;
+    border-left: 1px solid @border-gray;
+    border-right: 1px solid @border-gray;
   }
 
   .page-user-menu__item:first-child .page-user-menu__item-icon {

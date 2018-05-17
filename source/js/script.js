@@ -1,7 +1,7 @@
 var burger = document.querySelector(".menu-button");
 var menu = document.querySelector(".page-navigation");
 var modal = document.querySelector(".modal-add");
-var modalBtn = document.querySelector(".modal-show");
+var modalBtn = document.querySelectorAll(".modal-show");
 
 menu.classList.add("page-navigation--close");
 burger.classList.add("menu-button--close");
