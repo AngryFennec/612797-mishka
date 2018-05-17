@@ -1,52 +1,56 @@
 .send-block {
   display: flex;
   flex-direction: column;
-  padding-bottom: 53px;
   margin-top: 0;
+  padding-bottom: 53px;
 }
 
 .send-block__required {
-  .font-param(14px, 16px, "Open Sans", @lighter-font);
   padding-top: 2px;
+
+  .font-param(14px, 16px, "Open Sans", @lighter-font);
 }
 
 .send-block__btn {
-  margin-top: 18px;
   width: 260px;
   height: 52px;
+  margin-top: 18px;
+
   background-color: @white-font;
 }
 
 @media (min-width: @tablet-width) {
   .send-block {
-    height: 139px;
     flex-direction: row;
     justify-content: flex-start;
-    padding-bottom: 0;
+    height: 139px;
     margin: 0;
     padding-top: 0;
+    padding-bottom: 0;
   }
 
   .send-block__required {
     order: 5;
     margin-left: 100px;
-    .font-param(17px, 30px, "Open Sans", @lighter-font);
     padding-top: 30px;
     padding-left: 37px;
+
+    .font-param(17px, 30px, "Open Sans", @lighter-font);
   }
 
   .send-block__btn {
-    margin-left: 50px;
     width: 229px;
     margin-top: 38px;
+    margin-left: 50px;
+
     .font-param(17px, 16px, "Open Sans Bold", @dark-font);
   }
 }
 
 @media (min-width: @desktop-width) {
   .send-block {
-    height: 145px;
     flex-direction: row;
+    height: 145px;
   }
 
   .send-block__required {
@@ -56,9 +60,10 @@
   }
 
   .send-block__btn {
-    margin-left: 226px;
     width: 229px;
     margin-top: 45px;
+    margin-left: 226px;
+
     .font-param(17px, 16px, "Open Sans Bold", @dark-font);
   }
 }

@@ -1,25 +1,27 @@
 .catalog-main {
-  width: 100%;
-  margin: 0 auto;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
+  width: 100%;
+  margin: 0 auto;
 }
 
 .catalog-main__title {
   width: 260px;
-  .font-param(27px, 30px, "Open Sans Bold", @dark-font);
   margin: 0 auto;
   padding-top: 71px;
+  padding-right: 10px;
   padding-bottom: 78px;
   padding-left: 10px;
-  padding-right: 10px;
+
+  .font-param(27px, 30px, "Open Sans Bold", @dark-font);
 }
 
 .catalog-main__header {
-  margin: 0 auto;
   position: relative;
+
   width: 100%;
+  margin: 0 auto;
 }
 
 .catalog-main__goods {
@@ -29,14 +31,15 @@
 
 @media (min-width: @tablet-width) {
   .catalog-main__goods {
-    flex-direction: column;
     position: relative;
+
+    flex-direction: column;
   }
 
   .catalog-main__header {
     margin: 0;
-    padding: 0;
     margin-top: -70px;
+    padding: 0;
   }
 
   /*
@@ -52,25 +55,29 @@
   }*/
 
   .catalog-main__title {
-    .font-param(43px, 50px, "Open Sans Bold", @dark-font);
+    width: 668px;
     /*padding-left: 195px;*/
     padding: 0;
-    width: 668px;
-    text-align: center;
     padding-top: 93px;
+
+    text-align: center;
+
+    .font-param(43px, 50px, "Open Sans Bold", @dark-font);
   }
 
   .catalog-main::before {
     content: "";
     position: absolute;
+    top: 302px;
+    z-index: 10;
+
     width: 100%;
     height: 20px;
+
     background-image: url("../img/bg-zigzag-fill.svg");
     background-repeat: repeat-x;
     background-position-x: 50%;
     background-size: 768px 25px;
-    top: 302px;
-    z-index: 10;
   }
 }
 
@@ -82,12 +89,14 @@
   }
 
   .catalog-main__title {
-    .font-param(53px, 57px, "Open Sans Bold", @dark-font);
+    width: 1050px;
     /*padding-left: 344px;*/
     padding: 0;
-    width: 1050px;
     padding-top: 97px;
+
     text-align: center;
+
+    .font-param(53px, 57px, "Open Sans Bold", @dark-font);
   }
 
   .catalog-main__header {
@@ -97,13 +106,15 @@
   .catalog-main::before {
     content: "";
     position: absolute;
+    top: 322px;
+    z-index: 100;
+
     width: 100%;
     height: 36px;
+
     background-image: url("../img/bg-zigzag-fill.svg");
     background-repeat: repeat-x;
     background-position-x: 50%;
     background-size: 1150px 36px;
-    top: 322px;
-    z-index: 100;
   }
 }

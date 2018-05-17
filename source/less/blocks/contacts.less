@@ -1,13 +1,15 @@
 .contacts {
-  .font-param(15px, 30px, "Open Sans", @lighter-font);
-  min-height: 309px;
-  width: 320px;
-  margin: auto;
-  padding: 0 30px;
+  position: relative;
+
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  position: relative;
+  width: 320px;
+  min-height: 309px;
+  margin: auto;
+  padding: 0 30px;
+
+  .font-param(15px, 30px, "Open Sans", @lighter-font);
 }
 
 .contacts__text-block {
@@ -25,8 +27,9 @@
 }
 
 .contacts__title {
-  .font-param(18px, 30px, "Open Sans Bold", @dark-font);
   padding-top: 42px;
+
+  .font-param(18px, 30px, "Open Sans Bold", @dark-font);
 }
 
 .contacts__email-label {
@@ -35,18 +38,22 @@
 }
 
 .contacts__email-adress {
-  color: @lighter-font;
-  border-bottom: 2px solid @mail-font;
   margin-top: 24px;
   margin-bottom: 17px;
 
+  color: @lighter-font;
+
+  border-bottom: 2px solid @mail-font;
+
   &:hover {
     color: @mail-font;
+
     border-bottom: 1px soild @mail-font;
   }
 
   &:active {
     color: @mail-font-30;
+
     border-bottom: 1px solid @mail-under-light;
   }
 }
@@ -65,34 +72,38 @@
 .contacts::before {
   content: "";
   position: absolute;
+  top: 1px;
+  left: 0;
+
   width: 320px;
   height: 6px;
+
   background-image: url("../img/bg-zigzag-line.svg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: 320px 6px;
-  top: 1px;
-  left: 0;
 }
 
 @media (min-width: @tablet-width) {
   .contacts {
-    margin: 0 auto;
     width: 768px;
+    margin: 0 auto;
     margin-bottom: 10px;
   }
 
   .contacts__title {
-    .font-param(43px, 50px, "Open Sans Bold", @dark-font);
     padding-top: 75px;
     padding-left: 15px;
+
+    .font-param(43px, 50px, "Open Sans Bold", @dark-font);
   }
 
   .contacts__email-block {
-    .font-param(17px, 30px, "Open Sans", @lighter-font);
+    height: 70px;
     margin-top: 25px;
     margin-left: 20px;
-    height: 70px;
+
+    .font-param(17px, 30px, "Open Sans", @lighter-font);
   }
 
   .contacts__email-label {
@@ -104,9 +115,10 @@
   }
 
   .contacts__adress-block {
-    .font-param(17px, 30px, "Open Sans", @lighter-font);
-    margin-left: 54px;
     margin-top: 35px;
+    margin-left: 54px;
+
+    .font-param(17px, 30px, "Open Sans", @lighter-font);
   }
 
   .contacts__adress-label {
@@ -116,32 +128,37 @@
   .contacts::before {
     content: "";
     position: absolute;
+    top: -3px;
+
     width: 100%;
     height: 20px;
+
     background-image: url("../img/bg-zigzag-line.svg");
     background-repeat: repeat-x;
     background-position: 20px 100%;
     background-size: 768px 20px;
-    top: -3px;
   }
 
   .contacts::after {
     content: "";
     position: absolute;
-    background-image: url("../img/icon-flag.svg");
-    background-repeat: no-repeat;
-    width: 47px;
-    height: 81px;
     top: 58px;
     right: 53px;
+
+    width: 47px;
+    height: 81px;
+
+    background-image: url("../img/icon-flag.svg");
+    background-repeat: no-repeat;
   }
 }
 
 @media (min-width: @desktop-width) {
   .contacts__title {
-    .font-param(53px, 57px, "Open Sans Bold", @dark-font);
     padding-top: 153px;
     padding-left: 206px;
+
+    .font-param(53px, 57px, "Open Sans Bold", @dark-font);
   }
 
   .contacts {

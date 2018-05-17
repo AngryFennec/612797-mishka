@@ -1,9 +1,9 @@
 .messages {
-  min-height: 679px;
-  margin-left: 30px;
-  margin-right: 30px;
   display: flex;
   flex-direction: column;
+  min-height: 679px;
+  margin-right: 30px;
+  margin-left: 30px;
 }
 
 .messages__who-where {
@@ -12,54 +12,62 @@
 }
 
 .messages__who {
-  dsplay: flex;
   flex-direction: column;
   margin-top: 31px;
+
+  dsplay: flex;
 }
 
 .messages__title {
-  .font-param(25px, 30px, "Open Sans Bold", @dark-font);
   margin: 0;
   padding-top: 55px;
+
+  .font-param(25px, 30px, "Open Sans Bold", @dark-font);
 }
 
 .messages__text {
-  .font-param(15px, 30px, "Open Sans", @lighter-font);
   margin: 0;
   padding-top: 24px;
+
+  .font-param(15px, 30px, "Open Sans", @lighter-font);
 }
 
 .messages__author {
-  .font-param(17px, 24px, "Open Sans Bold", @dark-font);
   margin: 0;
   padding-top: 27px;
+
+  .font-param(17px, 24px, "Open Sans Bold", @dark-font);
 }
 
 .messages__nickname {
-  .font-param(17px, 30px, "Open Sans", @lighter-font);
   margin: 0;
   padding-top: 3px;
+
+  .font-param(17px, 30px, "Open Sans", @lighter-font);
 }
 
 .messages__button {
-  .font-param(18px, 20px, "Open Sans Bold", @lighter-font);
-  padding-top: 13px;
   display: block;
-  margin-top: 38px;
   width: 260px;
   height: 52px;
+  margin-top: 38px;
+  padding-top: 13px;
+
+  .font-param(18px, 20px, "Open Sans Bold", @lighter-font);
 }
 
 @media (min-width: @tablet-width) {
   .messages {
+    position: relative;
+
+    min-height: 537px;
     margin-left: 0;
     padding-left: 30px;
-    min-height: 537px;
+
     background-image: url("../img/review@1x.jpg");
     background-repeat: no-repeat;
-    background-position: 0% 10%;
+    background-position: 0 10%;
     background-size: 350px 457px;
-    position: relative;
 
     @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
       background-image: url("../img/review@2x.jpg");
@@ -76,22 +84,26 @@
   .messages__button {
     position: absolute;
     top: 49px;
-    height: 53px;
     right: 21px;
+
     width: 175px;
+    height: 53px;
+
     .font-param(17px, 20px, "Open Sans Bold", @lighter-font);
   }
 
   .messages__title {
-    .font-param(43px, 50px, "Open Sans Bold", @dark-font);
     padding-top: 86px;
     padding-left: 14px;
+
+    .font-param(43px, 50px, "Open Sans Bold", @dark-font);
   }
 
   .messages__text {
     padding-top: 50px;
-    padding-left: 19px;
     padding-right: 10px;
+    padding-left: 19px;
+
     .font-param(17px, 30px, "Open Sans", @lighter-font);
   }
 
@@ -107,17 +119,18 @@
 @media (min-width: @desktop-width) {
   .messages {
     height: 537px;
-    padding: 0;
     margin-left: 50px;
-    background-position: 0% 0%;
+    padding: 0;
+
+    background-position: 0 0;
   }
 
   .messages__who-where {
     flex-direction: row;
     margin: 0;
-    padding: 0;
     margin-top: 39px;
     margin-left: 175px;
+    padding: 0;
   }
 
   .messages__button {
@@ -127,22 +140,24 @@
   }
 
   .messages__title {
-    .font-param(53px, 57x, "Open Sans Bold", @dark-font);
-    padding-left: 172px;
     padding-top: 77px;
+    padding-left: 172px;
+
+    .font-param(53px, 57x, "Open Sans Bold", @dark-font);
   }
 
   .messages__text {
-    padding-left: 175px;
-    padding-right: 125px;
     padding-top: 51px;
+    padding-right: 125px;
+    padding-left: 175px;
   }
 
   .messages__author {
-    .font-param(17px, 30px, "Open Sans Bold", @dark-font);
+    margin-right: 219px;
     padding-top: 8px;
     padding-left: 2px;
-    margin-right: 219px;
+
+    .font-param(17px, 30px, "Open Sans Bold", @dark-font);
   }
 
   .messages__nickname {

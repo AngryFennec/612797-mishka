@@ -1,21 +1,21 @@
 .color-container {
-  height: 418px;
   display: flex;
   flex-direction: column;
   width: auto;
+  height: 418px;
   margin-top: 18px;
 }
 
 .color-container__options {
-  padding: 0;
-  margin: 0;
   display: flex;
   flex-direction: column;
   justify-content: start;
   width: 180px;
   height: 344px;
-  padding-left: 63px;
+  margin: 0;
+  padding: 0;
   padding-top: 38px;
+  padding-left: 63px;
 }
 
 .color-container__input {
@@ -25,18 +25,21 @@
 }
 
 .color-container__label {
-  margin: 0;
-  padding: 0;
-  margin-bottom: 43px;
   position: relative;
+
+  margin: 0;
+  margin-bottom: 43px;
+  padding: 0;
 
   ::before {
     content: "";
     position: absolute;
     top: -11px;
     left: -63px;
+
     width: 40px;
     height: 39px;
+
     border: 2px solid @dark-font;
   }
 
@@ -60,49 +63,53 @@
 .color-container__input:checked + .color-container__label::after {
   content: "";
   position: absolute;
-  display: inline-block;
-  vertical-align: baseline;
   top: 1px;
   left: -52px;
+
+  display: inline-block;
   width: 22px;
   height: 16px;
+
+  vertical-align: baseline;
+
   background-image: url("../img/icon-tick.svg");
-  background-size: 22px 16px;
   background-repeat: no-repeat;
   background-position: center;
+  background-size: 22px 16px;
 }
 
 @media (min-width: @tablet-width) {
   .color-container {
-    height: 303px;
     flex-direction: row;
-    padding-left: 22px;
     width: 768px;
-    background-color: @gray-back;
+    height: 303px;
     margin-top: 44px;
+    padding-left: 22px;
+
+    background-color: @gray-back;
   }
 
   .color-container__legend {
     padding-top: 65px;
-    padding-left: 30px;
     padding-right: 120px;
+    padding-left: 30px;
   }
 
   .color-container__options {
-    flex-wrap: wrap;
     flex-direction: row;
+    flex-wrap: wrap;
     width: 500px;
-    padding-top: 41px;
     height: 175px; /*от балды*/
+    padding-top: 41px;
     padding-left: 64px;
   }
 
   .color-container__label {
     width: 200px;
-    padding-left: 18px;
-    padding-top: 23px;
-    margin-bottom: 36px;
     margin-right: 0;
+    margin-bottom: 36px;
+    padding-top: 23px;
+    padding-left: 18px;
   }
 
   .color-container__label:nth-child(4n) {
@@ -116,32 +123,37 @@
     position: absolute;
     top: 9px;
     left: -62px;
+
     width: 53px;
     height: 52px;
+
     border: 2px solid @dark-font;
   }
 
   .color-container__input:checked + .color-container__label::after {
     content: "";
     position: absolute;
-    display: inline-block;
-    vertical-align: baseline;
     top: 25px;
     left: -52px;
+
+    display: inline-block;
     width: 33px;
     height: 22px;
+
+    vertical-align: baseline;
+
     background-image: url("../img/icon-tick.svg");
-    background-size: 33px 22px;
     background-repeat: no-repeat;
     background-position: center;
+    background-size: 33px 22px;
   }
 }
 
 @media (min-width: @desktop-width) {
   .color-container {
-    height: 225px;
     flex-direction: row;
     width: 100%;
+    height: 225px;
   }
 
   .color-container__options {
@@ -153,8 +165,8 @@
 
   .color-container__legend {
     padding-top: 68px;
-    padding-left: 89px;
     padding-right: 70px;
+    padding-left: 89px;
   }
 
   .color-container__label:nth-child(n) {
@@ -162,12 +174,12 @@
   }
 
   .color-container__label:nth-child(6) {
-    margin-left: 64px;
     margin-right: 0;
+    margin-left: 64px;
   }
 
   .color-container__label:nth-child(8) {
-    margin-left: 0;
     margin-right: 62px;
+    margin-left: 0;
   }
 }

@@ -1,7 +1,7 @@
 .type-container {
-  height: 175px;
   display: flex;
   flex-direction: column;
+  height: 175px;
 }
 
 .type-container__legend {
@@ -29,22 +29,27 @@
   display: inline-block;
   width: 41px;
   height: 41px;
+
+  vertical-align: baseline;
+
   border: 2px solid @dark-font;
   border-radius: 50%;
-  vertical-align: baseline;
 }
 
 .type-container__input:checked + .type-container__label::after {
   content: "";
   position: absolute;
-  display: inline-block;
-  vertical-align: baseline;
   top: 3px;
   left: -50px;
+
+  display: inline-block;
   width: 16px;
   height: 16px;
-  border-radius: 50%;
+
+  vertical-align: baseline;
+
   background-color: @aquamarine;
+  border-radius: 50%;
 }
 
 .type-container__input:focus + .type-container__label::before,
@@ -57,8 +62,9 @@
 }
 
 .type-container__label {
-  margin-bottom: 25px;
   position: relative;
+
+  margin-bottom: 25px;
 
   &:hover::before {
     border-color: @aquamarine;
@@ -71,8 +77,8 @@
 
 @media (min-width: @tablet-width) {
   .type-container {
-    height: 192px;
     flex-direction: row;
+    height: 192px;
     margin-left: 50px;
   }
 
@@ -86,10 +92,10 @@
   }
 
   .type-container__label {
-    padding-left: 32px;
+    margin-bottom: 0;
     padding-top: 38px;
     padding-bottom: 21px;
-    margin-bottom: 0;
+    padding-left: 32px;
   }
 
   .type-container__input + .type-container__label::before {
@@ -101,29 +107,34 @@
     display: inline-block;
     width: 53px;
     height: 53px;
+
+    vertical-align: baseline;
+
     border: 2px solid @dark-font;
     border-radius: 50%;
-    vertical-align: baseline;
   }
 
   .type-container__input:checked + .type-container__label::after {
     content: "";
     position: absolute;
-    display: inline-block;
-    vertical-align: baseline;
     top: 38px;
     left: -33px;
+
+    display: inline-block;
     width: 20px;
     height: 20px;
-    border-radius: 50%;
+
+    vertical-align: baseline;
+
     background-color: @aquamarine;
+    border-radius: 50%;
   }
 }
 
 @media (min-width: @desktop-width) {
   .type-container {
-    height: 190px;
     flex-direction: rpw;
+    height: 190px;
   }
 
   .type-container__legend {
@@ -133,7 +144,7 @@
 
   .type-container__options {
     width: 100%;
-    padding-left: 124px;
     padding-top: 0;
+    padding-left: 124px;
   }
 }

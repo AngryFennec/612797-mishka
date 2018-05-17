@@ -20,9 +20,9 @@
 }
 
 .personal-container__options-surname {
-  margin-top: 23px;
   display: flex;
   flex-direction: column;
+  margin-top: 23px;
 }
 
 .personal-container__options-secondname {
@@ -37,18 +37,19 @@
 }
 
 .personal-container__input {
-  border: none;
-  padding-bottom: 5px;
-  border-bottom: 2px solid @dark-font;
   flex-grow: 5;
   width: 100%;
   height: 49px;
+  padding-bottom: 5px;
+
+  border: none;
+  border-bottom: 2px solid @dark-font;
 }
 
 @media (min-width: @tablet-width) {
   .personal-container {
-    height: 305px;
     flex-direction: row;
+    height: 305px;
   }
 
   .personal-container__legend {
@@ -57,11 +58,11 @@
   }
 
   .personal-container__options {
-    width: 630px;
     flex-direction: column;
-    padding-left: 125px;
+    width: 630px;
     margin-top: 60px;
     padding-right: 3px;
+    padding-left: 125px;
   }
 
   .personal-container__options-name {
@@ -69,8 +70,8 @@
   }
 
   .personal-container__options-surname {
-    margin-top: 32px;
     flex-direction: row;
+    margin-top: 32px;
   }
 
   .personal-container__options-secondname {
@@ -79,21 +80,22 @@
   }
 
   .personal-container__input {
+    min-width: 370px;
+    height: 44px;
     margin: 0;
     padding: 0;
-    border-bottom: 2px solid @dark-font;
-    height: 44px;
-    padding-left: 17px;
     padding-bottom: 7px;
-    min-width: 370px;
+    padding-left: 17px;
+
+    border-bottom: 2px solid @dark-font;
   }
 
   .personal-container__label {
+    width: auto;
     margin: 0;
     padding: 0;
-    width: auto;
-    padding-right: 23px;
     padding-top: 6px;
+    padding-right: 23px;
   }
 }
 
@@ -104,20 +106,20 @@
   }
 
   .personal-container {
-    height: 305px;
     flex-direction: row;
+    height: 305px;
   }
 
   .personal-container__options {
     flex-direction: column;
-    padding-left: 74px;
-    padding-top: 2px;
     width: 720px;
+    padding-top: 2px;
+    padding-left: 74px;
   }
 
   .personal-container__input {
-    min-width: 630px;
     flex-grow: 10;
+    min-width: 630px;
     height: 42px;
   }
 
@@ -126,8 +128,8 @@
   }
 
   .personal-container__options-surname {
-    margin-top: 33px;
     flex-direction: row;
+    margin-top: 33px;
   }
 
   .personal-container__options-surname input {
