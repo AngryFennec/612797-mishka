@@ -12,10 +12,12 @@ burger.addEventListener ("click", function (evt) {
   burger.classList.toggle("menu-button--close");
 });
 
-modalBtn.addEventListener("click", function (evt) {
-  evt.preventDefault();
-  modal.classList.remove("modal-add--close");
-});
+for (var i=0; i <= (modalBtn.length-1); i++) {
+  modalBtn[i].addEventListener ("click", function (evt) {
+    evt.preventDefault();
+    modal.classList.remove("modal-add--close");
+  });
+}
 
 window.addEventListener("keydown", function (evt) {
   if (evt.keyCode == 27) {
