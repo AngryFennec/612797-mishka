@@ -5,7 +5,17 @@
 }
 
 .personal-container__legend {
-  margin-bottom: 30px;
+  margin-bottom: 31px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 8px;
+    left: 63px;
+    width: 197px;
+    height: 2px;
+    background-color: @aqua-dark;
+  }
 }
 
 .personal-container__options {

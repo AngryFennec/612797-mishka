@@ -10,6 +10,16 @@
 
   width: 100px;
   padding-top: 32px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 40px;
+    left: 63px;
+    width: 197px;
+    height: 2px;
+    background-color: @aqua-dark;
+  }
 }
 
 .info-container__legend-phone {
@@ -17,6 +27,16 @@
 
   width: 100px;
   padding-top: 10px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 16px;
+    left: 63px;
+    width: 197px;
+    height: 2px;
+    background-color: @aqua-dark;
+  }
 }
 
 .info-container__input-phone {
@@ -24,7 +44,7 @@
 
   width: 100%;
   margin-left: -2px;
-  padding-top: 22px;
+  padding-top: 21px;
   padding-bottom: 18px;
 
   background-image: url("../img/icon-phone.svg");
