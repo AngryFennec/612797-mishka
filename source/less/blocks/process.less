@@ -98,6 +98,16 @@
   background-color: transparent;
   border: none;
   outline: none;
+
+  &:hover,
+  &:focus {
+    transform: scale(1.2);
+  }
+
+  &:active {
+    transform: scale(0.8);
+    opacity: 0.3;
+  }
 }
 
 @media (min-width: @tablet-width) {
