@@ -1,45 +1,84 @@
 .addon-container {
-  min-height: 180px;
   display: flex;
   flex-direction: column;
+  min-height: 180px;
   padding-top: 21px;
 }
 
 .addon-container__legend {
   padding-top: 10px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 17px;
+    left: 63px;
+    width: 197px;
+    height: 2px;
+    background-color: @aqua-dark;
+  }
 }
 
 .addon-container__input {
   margin-top: 26px;
-  border: 2px solid @dark-font;
   padding-top: 15px;
-  padding-left: 14px;
   padding-bottom: 87px;
+  padding-left: 14px;
+
+  border: 2px solid @dark-font;
+
+  &:hover,
+  &:focus {
+    border-color: @aquamarine;
+  }
+
+  &:active {
+    color: @lighter-font;
+
+    border-color: @aquamarine;
+  }
 }
 
 @media (min-width: @tablet-width) {
   .addon-container {
-    height: 208px;
     flex-direction: row;
+    height: 208px;
   }
 
   .addon-container__legend {
     margin-left: 50px;
     padding-top: 46px;
+
+    &::after {
+      content: none;
+    }
   }
 
   .addon-container__input {
-    margin-left: 128px;
     width: 500px;
     height: 142px;
     margin-top: 29px;
+    margin-left: 128px;
+
+    resize: none;
+
+    &:hover,
+    &:focus {
+      border-color: @aquamarine;
+    }
+
+    &:active {
+      color: @lighter-font;
+
+      border-color: @aquamarine;
+    }
   }
 }
 
 @media (min-width: @desktop-width) {
   .addon-container {
-    height: 194px;
     flex-direction: row;
+    height: 194px;
   }
 
   .addon-container__legend {
@@ -48,9 +87,20 @@
   }
 
   .addon-container__input {
-    margin-left: 75px;
     width: 700px;
     height: 141px;
     margin-top: 28px;
+    margin-left: 75px;
+
+    &:hover,
+    &:focus {
+      border-color: @aquamarine;
+    }
+
+    &:active {
+      color: @lighter-font;
+
+      border-color: @aquamarine;
+    }
   }
 }

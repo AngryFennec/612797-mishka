@@ -1,24 +1,37 @@
 .page-menu {
   display: flex;
   flex-direction: column;
-  .reset-list();
   width: 100%;
   margin: 0 auto;
   margin-top: 17px;
+
+  .reset-list();
 }
 
 .page-menu__item {
-  border-top: 1px solid @gray-back;
   text-align: center;
+
+  border-top: 1px solid @gray-back;
+
+  &:hover,
+  &:focus {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .page-menu__item a {
   display: inline-block;
-  vertical-align: baseline;
   width: 100%;
   padding-top: 26px;
-  padding-bottom: 29px;
   padding-right: 18px;
+  padding-bottom: 29px;
+
+  vertical-align: baseline;
+
   .font-param (17px, 24px, "Open Sans Bold", @lighter-font);
 }
 
@@ -26,10 +39,10 @@
   .page-menu {
     flex-direction: row;
     order: 5;
-    margin-top: 0;
     width: 50%;
-    margin-left: 0;
+    margin-top: 0;
     margin-right: 0;
+    margin-left: 0;
   }
 
   .page-menu__item {
@@ -37,10 +50,12 @@
   }
 
   .page-menu__item a {
-    .font-param (15px, 24px, "Open Sans Bold", @lighter-font);
     padding-top: 22px;
-    padding-left: 48px;
     padding-right: 5px;
+    padding-left: 48px;
+    padding-bottom: 0;
+
+    .font-param (15px, 24px, "Open Sans Bold", @lighter-font);
   }
 
   .page-menu__item:nth-child(2) a {
@@ -54,9 +69,14 @@
     width: auto;
   }
 
+  .page-menu__item:first-child {
+    border-right: 1px solid @border-gray;
+  }
+
   .page-menu__item a {
-    .font-param (17px, 30px, "Open Sans Bold", @lighter-font);
     padding-top: 26px;
     padding-right: 37px;
+
+    .font-param (17px, 30px, "Open Sans Bold", @lighter-font);
   }
 }

@@ -1,58 +1,64 @@
 .params {
-  .font-param(15px, 24px, "Open Sans", @lighter-font);
   margin-top: 19px;
   margin-left: -2px;
+
   border-collapse: collapse;
+
+  .font-param(15px, 24px, "Open Sans", @lighter-font);
 }
 
 .params__title {
   width: 80px;
-  outline: none;
   padding-bottom: 4px;
+
+  outline: none;
 }
 
 .params__value {
   width: 180px;
-  outline: none;
   padding-bottom: 4px;
   padding-left: 20px;
+
+  outline: none;
 }
 
 .params__row {
   height: 39px;
+
   border-bottom: 1px solid @border-gray;
   outline: none;
 }
 
 @media (min-width: @tablet-width) {
   .params {
-    .font-param(15px, 20px, "Open Sans", @lighter-font);
     width: 315px;
     margin-top: 37px;
+
+    .font-param(15px, 20px, "Open Sans", @lighter-font);
   }
 
   .params__title {
     padding: 0;
-    padding-left: 22px;
     padding-top: 3px;
+    padding-left: 22px;
   }
 
   .params__value {
     padding: 0;
-    padding-left: 15px;
     padding-top: 3px;
+    padding-left: 15px;
   }
 }
 
 @media (min-width: @desktop-width) {
   .params {
-    margin-left: 173px;
     margin-top: 49px;
+    margin-left: 173px;
   }
 
   .params__value {
     padding: 0;
-    padding-left: 20px;
     padding-top: 3px;
+    padding-left: 20px;
   }
 }

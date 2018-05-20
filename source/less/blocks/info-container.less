@@ -1,43 +1,86 @@
 .info-container {
-  height: 214px;
   display: flex;
   flex-direction: column;
+  height: 214px;
   padding-top: 21px;
 }
 
 .info-container__legend-mail {
+  position: relative;
+
   width: 100px;
   padding-top: 32px;
-  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 40px;
+    left: 63px;
+    width: 197px;
+    height: 2px;
+    background-color: @aqua-dark;
+  }
 }
 
 .info-container__legend-phone {
+  position: relative;
+
   width: 100px;
   padding-top: 10px;
-  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 16px;
+    left: 63px;
+    width: 197px;
+    height: 2px;
+    background-color: @aqua-dark;
+  }
 }
 
 .info-container__input-phone {
+  position: relative;
+
   width: 100%;
-  padding-top: 22px;
-  padding-bottom: 18px;
-  outline: none;
   margin-left: -2px;
+  padding-top: 21px;
+  padding-bottom: 18px;
+
+  background-image: url("../img/icon-phone.svg");
+  background-repeat: no-repeat;
+  background-position: 97% 50%;
   border: none;
   border-bottom: 2px solid @dark-font;
-  position: relative;
-  background: url("../img/icon-phone.svg") no-repeat 97% 50%;
+  outline: none;
 }
 
 .info-container__input-mail {
+  position: relative;
+
   width: 100%;
+  margin-left: -2px;
   padding-top: 22px;
   padding-bottom: 18px;
-  margin-left: -2px;
+
+  background-image: url("../img/icon-mail.svg");
+  background-repeat: no-repeat;
+  background-position: 99% 62%;
   border: none;
   border-bottom: 2px solid @dark-font;
-  position: relative;
-  background: url("../img/icon-mail.svg") no-repeat 99% 62%;
+  outline: none;
+}
+
+.info-container__input-phone:hover,
+.info-container__input-phone:focus,
+.info-container__input-phone:active {
+  background-image: url("../img/icon-phone-hover.svg");
+}
+
+.info-container__input-mail:hover,
+.info-container__input-mail:focus,
+.info-container__input-mail:active {
+  background-image: url("../img/icon-mail-hover.svg");
 }
 
 /*
@@ -76,53 +119,62 @@
 */
 @media (min-width: @tablet-width) {
   .info-container {
-    height: 227px;
     flex-direction: row;
     flex-wrap: wrap;
+    height: 227px;
     padding-left: 50px;
+
     background-color: @gray-back;
   }
 
   .info-container__input-phone {
-    border-bottom: 2px solid @dark-font;
     width: 505px;
-    margin-left: 65px;
     height: 50px;
     margin-top: 31px;
-    padding-left: 20px;
+    margin-left: 65px;
     padding-top: 9px;
     padding-bottom: 12px;
+    padding-left: 20px;
+
     background: url("../img/icon-phone.svg") no-repeat 94% 46%;
-    .font-param (19px, 18px, "Open Sans", @light-gray);
+    border-bottom: 2px solid @dark-font;
   }
 
   .info-container__legend-phone {
     padding-top: 45px;
+
+    &::after {
+      content: none;
+    }
   }
 
   .info-container__legend-mail {
     padding-top: 13px;
     padding-bottom: 45px;
+
+    &::after {
+      content: none;
+    }
   }
 
   .info-container__input-mail {
-    border-bottom: 2px solid @dark-font;
     width: 505px;
-    margin-left: 65px;
     height: 45px;
     margin-top: 5px;
-    padding-left: 20px;
+    margin-left: 65px;
     padding-top: 7px;
+    padding-left: 20px;
+
     background: url("../img/icon-mail.svg") no-repeat 95% 46%;
-    .font-param (19px, 18px, "Open Sans", @light-gray);
+    border-bottom: 2px solid @dark-font;
   }
 }
 
 @media (min-width: @desktop-width) {
   .info-container {
-    height: 230px;
     flex-direction: row;
     flex-wrap: wrap;
+    height: 230px;
   }
 
   .info-container__legend-phone {
@@ -131,13 +183,14 @@
   }
 
   .info-container__input-phone {
-    border-bottom: 2px solid @dark-font;
     width: 700px;
-    margin-left: 14px;
     height: 50px;
     margin-top: 31px;
     margin-right: 150px;
+    margin-left: 14px;
+
     background: url("../img/icon-phone.svg") no-repeat 99% 50%;
+    border-bottom: 2px solid @dark-font;
   }
 
   .info-container__legend-mail {
@@ -146,12 +199,13 @@
   }
 
   .info-container__input-mail {
-    border-bottom: 2px solid @dark-font;
     width: 700px;
-    margin-left: 14px;
     height: 45px;
     margin-top: 9px;
+    margin-left: 14px;
     padding-top: 0;
+
     background: url("../img/icon-mail.svg") no-repeat 99.5% 30%;
+    border-bottom: 2px solid @dark-font;
   }
 }

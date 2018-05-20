@@ -1,30 +1,41 @@
 .developer {
-  height: 80px;
-  padding-left: 30px;
-  padding-right: 30px;
   display: flex;
-  align-items: center;
   justify-content: flex-start;
-  margin-top: -1px;
+  height: 80px;
+  margin-top: 12px;
+  padding-right: 30px;
+  padding-left: 30px;
 }
 
 .developer__text {
-  .font-param(19px, 18px, "Open Sans Bold", @dark-font);
   margin-left: 37px;
+
+  .font-param(19px, 18px, "Open Sans Bold", @dark-font);
 }
 
 .developer__logo {
-  margin-top: 7px;
+  margin-top: 9px;
   margin-left: 30px;
+
+  fill: @aquamarine;
+}
+
+.developer__logo:hover,
+.developer__logo:focus {
+  fill: @mail-font;
+}
+
+.developer__logo:active {
+  fill: rgba(70, 193, 174, 0.3);
 }
 
 @media (min-width: @tablet-width) {
   .developer {
     width: 186px;
-    padding: 0;
-    margin-left: 41px;
+    margin-top: -13px;
     margin-right: 84px;
-    margin-top: 3px;
+    margin-left: 41px;
+    padding: 0;
   }
 
   .developer__logo {
@@ -35,11 +46,11 @@
 @media (min-width: @desktop-width) {
   .developer {
     width: 177px;
-    padding: 0;
     margin: 0;
-    margin-left: 231px;
+    margin-top: 29px;
     margin-right: 92px;
-    margin-top: 3px;
+    margin-left: 225px;
+    padding: 0;
   }
 
   .developer__logo {

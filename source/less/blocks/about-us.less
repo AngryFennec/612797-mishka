@@ -1,9 +1,10 @@
 .about-us {
-  height: 899px;
   position: relative;
+
   display: flex;
   flex-direction: column;
   width: 100%;
+  height: 899px;
 }
 
 @media (min-width: @tablet-width) {
@@ -15,21 +16,22 @@
 
 @media (min-width: @desktop-width) {
   .about-us {
-    height: 646px;
     flex-wrap: wrap;
     width: 1150px;
+    height: 646px;
     margin: 0 auto;
   }
 
   .about-us::before {
     content: "";
     position: absolute;
-    width: 100%;
-    height: 21px;
+    top: -10px;
+    left: 50px;
+    width: 1050px;
+    height: 23px;
     background-image: url("../img/bg-zigzag-line.svg");
     background-repeat: repeat-x;
-    background-position: 27px 100%;
-    background-size: auto 21px;
-    top: -7px;
+    background-position: -23px 100%;
+    background-size: 1050px 23px;
   }
 }

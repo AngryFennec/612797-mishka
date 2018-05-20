@@ -1,13 +1,21 @@
 .map {
-  height: 460px;
   width: 100%;
+  height: 460px;
   padding-top: 5px;
 }
 
-.map__photo img {
-  background-color: @gray-back;
+.map__photo {
   width: 100%;
   height: 100%;
+
+  background-color: @gray-back;
+  background-image: url("./img/map-mobile@1x.jpg");
+
+  border: none;
+
+  @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+    background-image: url("./img/map-mobile@2x.jpg");
+  }
 }
 
 @media (min-width: @tablet-width) {
@@ -17,9 +25,15 @@
     padding-top: 0;
   }
 
-  .map__photo img {
+  .map__photo {
     width: 100%;
     height: 100%;
+
+    background-image: url("./img/map-tablet@1x.jpg");
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url("../img/map-tablet@2x.jpg");
+    }
   }
 }
 
@@ -28,13 +42,19 @@
     order: 5;
     width: 50%;
     margin: 0;
-    padding: 0;
     margin-top: 84px;
+    padding: 0;
     padding-left: 26px;
   }
 
-  .map__photo img {
+  .map__photo {
     width: 525px;
     height: 457px;
+
+    background-image: url("./img/map-desktop@1x.jpg");
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url("../img/map-desktop@2x.jpg");
+    }
   }
 }

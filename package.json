@@ -4,15 +4,25 @@
   "private": true,
   "description": "Личный проект «Мишка» от HTML Academy",
   "devDependencies": {
-    "@htmlacademy/editorconfig-cli": "1.x",
     "autoprefixer": "8.3.x",
     "browser-sync": "2.23.x",
+    "@htmlacademy/editorconfig-cli": "1.x",
+    "del": "^3.0.0",
     "gulp": "^3.9.1",
-    "gulp-bem-css": "^1.1.3",
+    "gulp-csso": "^3.0.1",
+    "gulp-imagemin": "^4.1.0",
     "gulp-less": "3.5.0",
     "gulp-plumber": "1.2.x",
     "gulp-postcss": "7.0.x",
+    "gulp-posthtml": "^3.0.4",
+    "gulp-svgstore": "^6.1.1",
+    "gulp-rename": "1.2.2",
+    "gulp-run": "^1.7.1",
+    "minify": "^3.0.5",
+    "gulp-webp": "^3.0.0",
     "pixel-glass": "^1.0.13",
+    "run-sequence": "^2.2.1",
+    "posthtml-include": "^1.1.0",
     "stylelint": "9.2.x",
     "stylelint-config-htmlacademy": "0.1.x"
   },
@@ -20,8 +30,8 @@
     "editorconfig": "editorconfig-cli",
     "stylelint": "stylelint \"source/less/**/*.less\" --syntax less",
     "test": "npm run editorconfig && npm run stylelint",
-    "build": "gulp style",
-    "start": "gulp serve",
+    "build": "gulp build",
+    "start": "npm run build && gulp serve",
     "generate": "gulp html"
   },
   "browserslist": [
@@ -41,6 +51,7 @@
     "node": "8.11"
   },
   "dependencies": {
-    "npm": "^6.0.0"
+    "npm": "^6.0.0",
+    "picturefill": "^3.0.2"
   }
 }
