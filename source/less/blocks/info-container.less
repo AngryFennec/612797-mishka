@@ -10,16 +10,6 @@
 
   width: 100px;
   padding-top: 32px;
-
-  &::after {
-    content: "";
-    position: absolute;
-    top: 40px;
-    left: 63px;
-    width: 197px;
-    height: 2px;
-    background-color: @aqua-dark;
-  }
 }
 
 .info-container__legend-phone {
@@ -27,16 +17,6 @@
 
   width: 100px;
   padding-top: 10px;
-
-  &::after {
-    content: "";
-    position: absolute;
-    top: 16px;
-    left: 63px;
-    width: 197px;
-    height: 2px;
-    background-color: @aqua-dark;
-  }
 }
 
 .info-container__input-phone {
@@ -44,12 +24,10 @@
 
   width: 100%;
   margin-left: -2px;
-  padding-top: 21px;
+  padding-top: 22px;
   padding-bottom: 18px;
 
-  background-image: url("../img/icon-phone.svg");
-  background-repeat: no-repeat;
-  background-position: 97% 50%;
+  background: url("../img/icon-phone.svg") no-repeat 97% 50%;
   border: none;
   border-bottom: 2px solid @dark-font;
   outline: none;
@@ -63,24 +41,9 @@
   padding-top: 22px;
   padding-bottom: 18px;
 
-  background-image: url("../img/icon-mail.svg");
-  background-repeat: no-repeat;
-  background-position: 99% 62%;
+  background: url("../img/icon-mail.svg") no-repeat 99% 62%;
   border: none;
   border-bottom: 2px solid @dark-font;
-  outline: none;
-}
-
-.info-container__input-phone:hover,
-.info-container__input-phone:focus,
-.info-container__input-phone:active {
-  background-image: url("../img/icon-phone-hover.svg");
-}
-
-.info-container__input-mail:hover,
-.info-container__input-mail:focus,
-.info-container__input-mail:active {
-  background-image: url("../img/icon-mail-hover.svg");
 }
 
 /*
@@ -138,23 +101,17 @@
 
     background: url("../img/icon-phone.svg") no-repeat 94% 46%;
     border-bottom: 2px solid @dark-font;
+
+    .font-param (19px, 18px, "Open Sans", @light-gray);
   }
 
   .info-container__legend-phone {
     padding-top: 45px;
-
-    &::after {
-      content: none;
-    }
   }
 
   .info-container__legend-mail {
     padding-top: 13px;
     padding-bottom: 45px;
-
-    &::after {
-      content: none;
-    }
   }
 
   .info-container__input-mail {
@@ -167,6 +124,8 @@
 
     background: url("../img/icon-mail.svg") no-repeat 95% 46%;
     border-bottom: 2px solid @dark-font;
+
+    .font-param (19px, 18px, "Open Sans", @light-gray);
   }
 }
 
