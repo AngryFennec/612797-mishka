@@ -3,7 +3,6 @@
 
   display: flex;
   flex-direction: column;
-  height: 800px;
 }
 
 .features__title {
@@ -16,8 +15,6 @@
 
 .features__list {
   .reset-list();
-  display: flex;
-  flex-direction: column;
   margin-right: 30px;
   margin-left: 30px;
 
@@ -148,12 +145,14 @@
 
 @media (min-width: @tablet-width) {
   .features {
-    height: 645px;
+    padding-top: 45px;
+    padding-bottom: 50px;
   }
 
   .features__list {
+    display: flex;
     flex-wrap: wrap;
-    height: 500px;
+    min-height: 465px;
 
     .font-param (20px, 22px, "Open Sans Bold", @dark-font);
   }
@@ -185,6 +184,7 @@
       margin-top: 105px;
       padding-right: 105px;
       padding-left: 20px;
+      order: 1;
 
       &::before {
         top: -54px;
@@ -196,6 +196,7 @@
       margin-top: 111px;
       padding-right: 60px;
       padding-left: 20px;
+      order: 3;
 
       &::before {
         top: -52px;
@@ -207,6 +208,7 @@
       margin-top: 112px;
       padding-right: 80px;
       padding-left: 20px;
+      order: 5;
 
       &::before {
         top: -48px;
@@ -217,6 +219,7 @@
     &:nth-child(4) {
       margin-top: 105px;
       padding-right: 40px;
+      order: 2;
 
       &::before {
         top: -52px;
@@ -226,6 +229,7 @@
 
     &:nth-child(5) {
       margin-top: 111px;
+      order: 4;
 
       &::before {
         top: -50px;
@@ -236,6 +240,7 @@
     &:nth-child(6) {
       margin-top: 113px;
       padding-right: 40px;
+      order: 6;
 
       &::before {
         top: -52px;
@@ -246,12 +251,7 @@
 }
 
 @media (min-width: @desktop-width) {
-  .features {
-    height: 652px;
-  }
-
   .features__list {
-    flex-wrap: wrap;
     margin-right: 202px;
     margin-left: 204px;
 

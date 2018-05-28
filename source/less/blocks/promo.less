@@ -63,6 +63,7 @@
 @media (min-width: @tablet-width) {
   .promo {
     min-height: 610px;
+    position: relative;
   }
 
   .promo__head {
@@ -79,13 +80,14 @@
 
   .promo__content {
     flex-wrap: wrap;
-    height: 463px;
+    min-height: 463px;
   }
 
   .promo__photo {
     order: 5;
-    margin-top: 58px;
-    margin-left: 16px;
+    position: absolute;
+    top: 70px;
+    right: 0;
 
     & img {
       width: 330px;
@@ -140,7 +142,7 @@
 
   .promo__content {
     flex-wrap: wrap;
-    height: 643px;
+    min-height: 643px;
   }
 
   .promo__head {
@@ -171,8 +173,6 @@
 
   .promo__photo {
     order: 5;
-    margin-top: -102px;
-    margin-left: 28px;
 
     & img {
       width: 525px;
